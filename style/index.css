@@ -1,0 +1,150 @@
+/* COLOR VARIABLES */
+:root {
+  --primary_blue: #3c99cd;
+  --dark_text: #282a33;
+  --solid_blue: #3c58cd;
+  --light_dark: #404248;
+  --secondary_orange: #e4b149;
+  --white: #fff;
+}
+/* FONTS */
+@font-face {
+  font-family: "Manrope";
+  font-display: swap;
+  src: url(../fonts/Manrope-Light.ttf);
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Manrope";
+  font-display: swap;
+  src: url(../fonts/Manrope-Regular.ttf);
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Manrope";
+  font-display: swap;
+  src: url(../fonts/Manrope-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Manrope";
+  font-display: swap;
+  src: url(../fonts/Manrope-Bold.ttf);
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* HEADER */
+.header {
+  background-image: url(../img/header_img.jpg);
+  height: 62.5em;
+}
+
+.header__nav {
+  width: 100%;
+  padding-top: 3em;
+  display: grid;
+  grid-template-columns: 5fr 1fr 1fr 1fr 5fr;
+  justify-content: center;
+}
+
+.header__nav a {
+  cursor: pointer;
+  color: var(--white);
+  font-size: 1.125em;
+  font-weight: 600;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.header__nav-logo {
+  padding: 0em 0em 0em 6.4375em;
+  justify-content: center;
+  align-self: center;
+}
+
+.header__nav-burger {
+  padding: 0em 6.375em 0em 0em;
+  align-self: center;
+  justify-self: right;
+}
+
+.header__title {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 260px 0 0 390px;
+}
+
+.header__title-h1 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 4.5em;
+  line-height: 75px;
+  color: var(--white);
+}
+
+.header__title-text {
+  margin: 25px 0 0 0;
+  width: 605px;
+  font-family: "Manrope";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--white);
+}
+
+.header__title-container {
+  display: flex;
+  gap: 25px;
+  padding-top: 36px;
+}
+
+.header__title-container a {
+  cursor: pointer;
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.header__title-container img {
+  width: 35px;
+  height: 2px;
+  align-self: center;
+}
+
+.header__title-container2 {
+  display: flex;
+  flex-direction: row;
+  writing-mode: vertical-rl;
+  gap: 25px;
+}
+
+.header__title-container2 a {
+  cursor: pointer;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.header__title-container2 img {
+  width: 35px;
+  height: 2px;
+  align-self: center;
+}
