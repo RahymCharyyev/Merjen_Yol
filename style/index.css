@@ -44,7 +44,9 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
 /* HEADER */
+
 .header {
   background-image: url(../img/header_img.jpg);
   height: 62.5em;
@@ -121,7 +123,8 @@ html {
   transition: 0.2s;
 }
 
-.header__title-container img {
+.header__title-container div {
+  background: #fff;
   width: 35px;
   height: 2px;
   align-self: center;
@@ -129,22 +132,29 @@ html {
 
 .header__title-container2 {
   display: flex;
-  flex-direction: row;
-  writing-mode: vertical-rl;
+  flex-direction: column;
   gap: 25px;
+  padding-right: 100px;
 }
 
 .header__title-container2 a {
   cursor: pointer;
-  color: #000;
+  color: var(--white);
   font-size: 18px;
   font-weight: 600;
   text-decoration: none;
+  writing-mode: vertical-lr;
+  transform: rotate(-180deg);
+  align-self: end;
   transition: 0.2s;
 }
 
-.header__title-container2 img {
-  width: 35px;
-  height: 2px;
-  align-self: center;
+.header__title-container2 div {
+  margin-right: 8px;
+  align-self: end;
+  background: #fff;
+  width: 2px;
+  height: 35px;
 }
+
+/* About us */
