@@ -43,6 +43,8 @@ body {
 
 html {
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
   background-image: repeating-linear-gradient(
     90deg,
     #fafbfe 0px,
@@ -54,8 +56,6 @@ html {
     #fff 1440px,
     #fff 1920px
   );
-  margin: 0;
-  padding: 0;
 }
 
 /* HEADER */
@@ -175,7 +175,7 @@ html {
 
 /* ABOUT US */
 
-.about__container {
+.about {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -183,7 +183,7 @@ html {
   margin-top: 112px;
 }
 
-.about__container-title {
+.about__title {
   margin: 0;
   font-weight: 600;
   font-size: 52px;
@@ -191,14 +191,14 @@ html {
   color: var(--dark_text);
 }
 
-.about__container-link {
+.about__link {
   grid-column: 1/2;
   display: flex;
   flex-direction: row;
   gap: 25px;
 }
 
-.about__container-link a {
+.about__link a {
   height: 20px;
   cursor: pointer;
   font-weight: 600;
@@ -208,14 +208,14 @@ html {
   transition: 0.2s;
 }
 
-.about__container-link div {
+.about__link div {
   margin-top: 12px;
   background: var(--primary_blue);
   width: 35px;
   height: 2px;
 }
 
-.about__container-text {
+.about__text {
   grid-row: 1/2;
   grid-column: 2/3;
   margin: 0;
@@ -341,4 +341,164 @@ html {
   width: 35px;
   height: 2px;
   align-self: center;
+}
+
+/* WHAT WE DO */
+
+.job {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 25px;
+  padding: 146px 0 0 30px;
+}
+
+.job__img1 {
+  height: 830px;
+  width: 714px;
+  grid-column: 1/2;
+  grid-row: 1/4;
+  justify-content: end;
+  align-items: end;
+  justify-items: end;
+  justify-self: end;
+}
+
+.job__img2 {
+  height: 400px;
+  width: 455px;
+}
+
+.job__text {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  width: 117px;
+  height: 27px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  align-items: center;
+  color: var(--dark_text);
+}
+
+.job__title {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 60px;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: var(--dark_text);
+  padding-top: 9px;
+}
+
+.job__link {
+  display: flex;
+  grid-row: 2/3;
+  grid-column: 2/3;
+  align-self: center;
+  gap: 25px;
+  padding-top: 330px;
+}
+
+.job__link a {
+  height: 20px;
+  cursor: pointer;
+  color: var(--dark_text);
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.job__link div {
+  background: var(--primary_blue);
+  width: 35px;
+  height: 2px;
+  align-self: center;
+}
+
+/* TRANSPORTATION */
+
+.transportation {
+  display: flex;
+  flex-direction: row;
+  padding-top: 112px;
+}
+
+.transportation2 {
+  display: flex;
+  flex-direction: row;
+  padding-top: 112px;
+}
+
+.transportation__first,
+.transportation__third {
+  padding-left: 391px;
+}
+
+.transportation__first-title,
+.transportation__second-title,
+.transportation__third-title,
+.transportation__fourth-title {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.transportation__first-title div,
+.transportation__second-title div,
+.transportation__third-title div,
+.transportation__fourth-title div {
+  background: var(--primary_blue);
+  width: 35px;
+  height: 2px;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+}
+
+.transportation__second,
+.transportation__fourth {
+  padding-left: 240px;
+}
+
+/* .transportation__second div {
+  background: var(--primary_blue);
+  width: 35px;
+  height: 2px;
+} */
+
+/* .transportation__first h2,
+.transportation__second h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+  letter-spacing: -0.02em;
+  color: #282a33;
+  margin: 0;
+} */
+
+.transportation__first ul,
+.transportation__second ul,
+.transportation__third ul,
+.transportation__fourth ul {
+  list-style-type: none;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.01em;
+  color: #282a33;
+  padding: 0;
+}
+
+.transportation__first li,
+.transportation__second li,
+.transportation__third li,
+.transportation__fourth li {
+  padding-top: 45px;
 }
