@@ -539,3 +539,40 @@ html {
   height: 2px;
   align-self: center;
 }
+
+/* IMPORT  */
+.import {
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 210px;
+  padding-left: 390px;
+}
+
+.import__title {
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 65px;
+  letter-spacing: -0.02em;
+  color: var(--dark_text);
+}
+
+.import__text {
+  width: 510px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.01em;
+  padding-top: 47px;
+}
+
+.import__img {
+  display: flex;
+  column-gap: 300px;
+  padding-top: 135px;
+}
+
+.import__img img {
+  width: 425px;
+  height: 600px;
+}
