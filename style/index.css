@@ -390,7 +390,7 @@ html {
   align-items: center;
   letter-spacing: -0.02em;
   color: var(--dark_text);
-  padding-top: 9px;
+  padding-top: 45px;
 }
 
 .job__link {
@@ -399,7 +399,7 @@ html {
   grid-column: 2/3;
   align-self: center;
   gap: 25px;
-  padding-top: 330px;
+  padding-top: 300px;
 }
 
 .job__link a {
@@ -421,21 +421,21 @@ html {
 
 /* TRANSPORTATION */
 
-.transportation {
-  display: flex;
-  flex-direction: row;
-  padding-top: 112px;
-}
-
+.transportation,
 .transportation2 {
   display: flex;
   flex-direction: row;
-  padding-top: 112px;
+  padding-top: 125px;
 }
 
 .transportation__first,
 .transportation__third {
   padding-left: 391px;
+}
+
+.transportation__second,
+.transportation__fourth {
+  padding-left: 240px;
 }
 
 .transportation__first-title,
@@ -447,6 +447,18 @@ html {
   gap: 20px;
 }
 
+.transportation__first-title h2,
+.transportation__second-title h2,
+.transportation__third-title h2,
+.transportation__fourth-title h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+  letter-spacing: -0.02em;
+  color: var(--dark_text);
+  margin: 0;
+}
+
 .transportation__first-title div,
 .transportation__second-title div,
 .transportation__third-title div,
@@ -454,34 +466,8 @@ html {
   background: var(--primary_blue);
   width: 35px;
   height: 2px;
-  align-items: center;
-  align-content: center;
   align-self: center;
-  justify-content: center;
-  justify-items: center;
-  justify-self: center;
 }
-
-.transportation__second,
-.transportation__fourth {
-  padding-left: 240px;
-}
-
-/* .transportation__second div {
-  background: var(--primary_blue);
-  width: 35px;
-  height: 2px;
-} */
-
-/* .transportation__first h2,
-.transportation__second h2 {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 35px;
-  letter-spacing: -0.02em;
-  color: #282a33;
-  margin: 0;
-} */
 
 .transportation__first ul,
 .transportation__second ul,
@@ -492,7 +478,7 @@ html {
   font-size: 18px;
   line-height: 25px;
   letter-spacing: -0.01em;
-  color: #282a33;
+  color: var(--dark_text);
   padding: 0;
 }
 
@@ -501,4 +487,55 @@ html {
 .transportation__third li,
 .transportation__fourth li {
   padding-top: 45px;
+}
+
+/* CAREER */
+
+.career {
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  background: #d9d9d9;
+  margin-top: 455px;
+}
+
+.career__title {
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 65px;
+  letter-spacing: -0.02em;
+  color: var(--dark_text);
+  padding: 217px 0 0 390px;
+}
+
+.career__text {
+  width: 510px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.01em;
+  padding: 34px 0 0 390px;
+}
+
+.career__link {
+  display: flex;
+  gap: 25px;
+  padding: 34px 0 0 390px;
+}
+
+.career__link a {
+  height: 20px;
+  cursor: pointer;
+  color: var(--dark_text);
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.career__link div {
+  background: var(--primary_blue);
+  width: 35px;
+  height: 2px;
+  align-self: center;
 }
