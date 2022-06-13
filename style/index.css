@@ -708,3 +708,38 @@ html {
   padding-top: 350px;
   padding-left: 190px;
 }
+
+/* PARTNERS  */
+
+.partners {
+  display: flex;
+  flex-direction: row;
+  padding: 0 0 273px 390px;
+}
+
+.partners img {
+  padding-left: 263px;
+}
+
+.partners__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.partners__container-title {
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 65px;
+  letter-spacing: -0.02em;
+  color: var(--dark_text);
+}
+
+.partners__container-text {
+  width: 509px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.01em;
+  color: var(--light_dark);
+  padding-top: 34px;
+}
