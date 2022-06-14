@@ -2,10 +2,9 @@
 :root {
   --primary_blue: #3c99cd;
   --dark_text: #282a33;
-  --solid_blue: #3c58cd;
   --light_dark: #404248;
-  --secondary_orange: #e4b149;
   --white: #fff;
+  --text: 2em;
 }
 /* FONTS */
 @font-face {
