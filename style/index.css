@@ -283,8 +283,6 @@ html {
 }
 
 .strengths__container-img {
-  height: 450px;
-  width: 960px;
   grid-column: 1/3;
   grid-row: 2/3;
   padding-top: 41px;
@@ -353,19 +351,12 @@ html {
 }
 
 .job__img1 {
-  height: 830px;
-  width: 714px;
   grid-column: 1/2;
   grid-row: 1/4;
   justify-content: end;
   align-items: end;
   justify-items: end;
   justify-self: end;
-}
-
-.job__img2 {
-  height: 400px;
-  width: 455px;
 }
 
 .job__text {
@@ -571,11 +562,6 @@ html {
   padding: 135px 0 0 0;
 }
 
-.import__img img {
-  width: 425px;
-  height: 600px;
-}
-
 /* EXPORT */
 .export {
   display: grid;
@@ -588,8 +574,6 @@ html {
 .export__img2,
 .export__img3,
 .export__img4 {
-  width: 400px;
-  height: 430px;
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -716,7 +700,7 @@ html {
   padding: 0 0 273px 390px;
 }
 
-.partners img {
+.partners picture {
   padding-left: 263px;
 }
 
