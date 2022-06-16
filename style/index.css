@@ -74,6 +74,7 @@ html {
     #fff 90em,
     #fff 120em
   );
+  overflow-x: hidden;
 }
 
 /* HEADER */
