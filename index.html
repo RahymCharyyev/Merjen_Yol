@@ -44,8 +44,14 @@
       <div class="header__nav-logo " id="header__nav-logo"></div>
       <a id="header__nav-link1" href="#about">About us</a>
       <a id="header__nav-link2" href="#job">Services</a>
-      <a id="header__nav-link3" href="#blog">Blog</a>
-      <img src="img/burger.svg" alt="Burger Menu" class="header__nav-burger" width="59px" height="17px" />
+      <a id="header__nav-link3" href="#footer">Contacts</a>
+      <div class="header__nav-dropdown">
+        <a href="#" id="en" class="header__nav-dropbutton">EN</a>
+        <div class="header__nav-dropdown-content">
+          <a href="#" id="ru">RU</a>
+          <a href="#" id="tm">TM</a>
+        </div>
+      </div>
     </nav>
     <div class="header__title">
       <h1 class="header__title-h1 wow fadeInRight" data-wow-delay="0.8s">
@@ -354,7 +360,7 @@
     </picture>
   </section>
   <!-- FOOTER -->
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <div class="footer__1">
       <img src="./img/header_logo.svg" alt="Logo" class="footer__logo" width="189px" height="30px">
       <p>Ashgabat,Olympic Hotel 162A</p>
@@ -384,5 +390,6 @@
 <script src="./js/script.js"></script>
 <script src="./js/wow.min.js"></script>
 <script src="./js/animation.js"></script>
+<script src="./js/lang.js"></script>
 
 </html>

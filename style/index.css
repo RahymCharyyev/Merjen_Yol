@@ -88,7 +88,8 @@ html {
 
 .header__nav {
   width: 100%;
-  padding-top: 48px;
+  height: 110px;
+  padding-top: 20px;
   display: grid;
   grid-template-columns: 5fr 1fr 1fr 1fr 5fr;
   justify-content: center;
@@ -110,16 +111,19 @@ html {
   padding-top: 0;
   z-index: 100;
 }
+
 #header__nav-link1.fix,
 #header__nav-link2.fix,
 #header__nav-link3.fix {
   color: var(--dark_text);
   align-self: center;
 }
+
 #header__nav-logo.fix {
   background-image: url(../img/header__logo_coloured.svg);
   background-position: center top;
 }
+
 .header__nav a {
   cursor: pointer;
   color: var(--white);
@@ -128,6 +132,7 @@ html {
   justify-content: center;
   text-align: center;
   text-decoration: none;
+  align-self: center;
   transition: 0.2s;
 }
 
@@ -143,10 +148,35 @@ html {
   background-size: contain;
 }
 
-.header__nav-burger {
+.header__nav-dropbutton {
+  color: var(--white);
+  padding: 10px 7px 10px 7px;
+}
+
+.header__nav-dropdown {
   padding: 0 102px 0 0;
   align-self: center;
   justify-self: right;
+}
+
+.header__nav-dropdown-content {
+  display: none;
+  z-index: 1;
+}
+
+.header__nav-dropdown-content a {
+  display: block;
+  padding-top: 15px;
+}
+
+.header__nav-dropdown:hover .header__nav-dropdown-content {
+  display: block;
+}
+
+#en.fix,
+#ru.fix,
+#tm.fix {
+  color: var(--dark_text);
 }
 
 .header__title {
