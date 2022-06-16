@@ -32,44 +32,46 @@
   <link rel="stylesheet" href="style/normalize.css" />
   <link rel="stylesheet" href="style/index.css" />
   <link rel="stylesheet" href="style/burger.css" />
+  <link rel="stylesheet" href="style/animate.css">
+  <link rel="stylesheet" href="style/animate.min.css">
   <title>MERJEN YOL</title>
 </head>
 
 <body>
   <!-- HEADER -->
   <header class="header">
-    <nav class="header__nav">
-      <img src="./img/header_logo.svg" alt="MERJEN YOL logo" class="header__nav-logo" width="188px" height="30px">
-      <a class="#" href="#about-us">About us</a>
-      <a class="#" href="#services">Services</a>
-      <a class="#" href="#blog">Blog</a>
+    <nav class="header__nav wow fadeInDown" id="header__nav" data-wow-delay="0.5s">
+      <div class="header__nav-logo " id="header__nav-logo"></div>
+      <a id="header__nav-link1" href="#about">About us</a>
+      <a id="header__nav-link2" href="#job">Services</a>
+      <a id="header__nav-link3" href="#blog">Blog</a>
       <img src="img/burger.svg" alt="Burger Menu" class="header__nav-burger" width="59px" height="17px" />
     </nav>
     <div class="header__title">
-      <h1 class="header__title-h1">
+      <h1 class="header__title-h1 wow fadeInRight" data-wow-delay="0.8s">
         Fundamental Principles <br />
         of Service Delivery
       </h1>
-      <p class="header__title-text">
+      <p class="header__title-text wow fadeInRight" data-wow-delay="1s">
         MERJEN YOL acquired in close cooperation with the European logistics
         giant, the Austrian company Gebrüder Weiss. We cooperate with leading
         international transport companies. Interacting with all participants
         in the transport and logistics chain, we control each stage of the
         chosen route.
       </p>
-      <div class="header__title-container">
+      <div class="header__title-container wow fadeInRight" data-wow-delay="1.2s">
         <a href="#">Find out more</a>
         <div></div>
       </div>
-      <div class="header__title-container2">
+      <div class="header__title-container2 wow fadeInDown" data-wow-delay="1.5s">
         <a href="#">Scroll down</a>
         <div></div>
       </div>
     </div>
   </header>
   <!-- ABOUT US -->
-  <section class="about">
-    <h2 class="about__title">
+  <section class="about wow fadeInRight" data-wow-delay="0.3s">
+    <h2 class=" about__title" id="about">
       About Our <br />
       Project
     </h2>
@@ -87,8 +89,8 @@
   <!-- OUR STRENGTHS -->
   <section class="strengths">
     <div class="strengths__container">
-      <h2 class="strengths__container-title1">Our strengths:</h2>
-      <ul>
+      <h2 class="strengths__container-title1 wow fadeInRight" data-wow-delay="0.3s">Our strengths:</h2>
+      <ul class="wow fadeInRight" data-wow-delay="0.3s">
         <li>Optimized Pricing</li>
         <li>Delivery of small cargoes and documentation</li>
         <li>
@@ -104,49 +106,49 @@
           <br />various types of cargo
         </li>
       </ul>
-      <picture class="strengths__container-img">
+      <picture class="strengths__container-img wow fadeInDown" data-wow-delay="0.3s">
         <source srcset="./img/our_strengths_img.webp" />
         <img src="./img/our_strengths_img.jpg" alt="Our Strengths" width="960px" height="448px" />
       </picture>
-      <h2 class="strengths__container-title2">
+      <h2 class="strengths__container-title2 wow fadeInRight" data-wow-delay="0.3s">
         Our Solutions for <br />
         Enterprises
       </h2>
-      <p class="strengths__container-text">
+      <p class="strengths__container-text wow fadeInRight" data-wow-delay="0.3s">
         Rail transportation in most cases is relevant for the transportation
         of oversized and heavy cargo, as well as bulk materials.Preparation of
         all related documentation. Loading and unloading control.
       </p>
-      <div class="strengths__container-link">
+      <div class="strengths__container-link wow fadeInRight" data-wow-delay="0.3s">
         <a href="#">Find out more</a>
         <div></div>
       </div>
     </div>
   </section>
   <!-- WHAT WE DO -->
-  <section class="job">
-    <picture class="job__img1">
+  <section class="job" id="job">
+    <picture class="job__img1 wow fadeInDown" data-wow-delay="0.3s">
       <source srcset="./img/what_we_do1.webp" />
       <img src="./img/what_we_do1.jpg" alt="What We Do" width="714px" height="830px" />
     </picture>
-    <picture class="job__img2">
+    <picture class="job__img2 wow fadeInDown" data-wow-delay="0.3s">
       <source srcset="./img/what_we_do2.webp" />
       <img src="./img/what_we_do2.jpg" alt="What We Do" width="455px" height="400px" />
     </picture>
-    <p class="job__text">What We Do</p>
-    <h2 class="job__title">
+    <p class="job__text wow fadeInRight" data-wow-delay="0.3s">What We Do</p>
+    <h2 class="job__title wow fadeInRight" data-wow-delay="0.3s">
       Our Company manages <br />
       door-to-door logistics <br />
       activities, controlling <br />
       every link in the chain.
     </h2>
-    <div class="job__link">
+    <div class="job__link wow fadeInRight" data-wow-delay="0.3s">
       <a href="#">Find out more</a>
       <div></div>
     </div>
   </section>
   <!-- TRANSPORTATION -->
-  <section class="transportation">
+  <section class="transportation wow fadeInRight" data-wow-delay="0.3s">
     <div class="transportation__first">
       <div class="transportation__first-title">
         <h2>Ground Transportation</h2>
@@ -175,7 +177,7 @@
       </ul>
     </div>
   </section>
-  <section class="transportation2">
+  <section class="transportation2 wow fadeInRight" data-wow-delay="0.3s">
     <div class="transportation__third">
       <div class="transportation__third-title">
         <h2>Air and Sea Transportation</h2>
@@ -218,7 +220,7 @@
       </ul>
   </section>
   <!-- CAREER -->
-  <section class="career">
+  <section class="career wow fadeInRight" data-wow-delay="0.3s">
     <h2 class="career__title">Career</h2>
     <p class="career__text">Transport and logistics company "MERJEN YOL" - is an experienced participant in the cargo
       transportation market in Turkmenistan
@@ -231,12 +233,13 @@
   </section>
   <!-- IMPORT -->
   <section class="import">
-    <h2 class="import__title">Import and export </h2>
-    <p class="import__text">Transport and logistics company "MERJEN YOL" - is an experienced participant in the cargo
+    <h2 class="import__title wow fadeInRight" data-wow-delay="0.3s">Import and export </h2>
+    <p class="import__text wow fadeInRight" data-wow-delay="0.3s">Transport and logistics company "MERJEN YOL" - is an
+      experienced participant in the cargo
       transportation market in Turkmenistan
       and beyond. We form, support and defend the principles of efficient logistics, taking into account your interests.
     </p>
-    <div class="import__img">
+    <div class="import__img wow fadeIn" data-wow-delay="0.3s">
       <picture>
         <source srcset="./img/import_img.webp" />
         <img src="./img/import_img.jpg" alt="Import" width="425px" height="600px">
@@ -248,7 +251,7 @@
     </div>
   </section>
   <!-- EXPORT -->
-  <section class="export">
+  <section class="export wow fadeIn" data-wow-delay="0.3s">
     <div class="export__img1">
       <picture>
         <source srcset="./img/export_1.webp" />
@@ -279,7 +282,7 @@
     </div>
   </section>
   <!-- BLOG -->
-  <section class="blog">
+  <section class="blog wow fadeInRight" data-wow-delay="0.3s" id="blog">
     <h2 class="blog__title">Blog</h2>
     <div class="blog__first">
       <picture>
@@ -328,22 +331,24 @@
   <!-- PARTNERS -->
   <section class="partners">
     <div class="partners__container">
-      <h2 class="partners__container-title">Partners</h2>
-      <p class="partners__container-text">Transport and logistics company "MERJEN YOL" - is an experienced participant
+      <h2 class="partners__container-title wow fadeInRight" data-wow-delay="0.3s">Partners</h2>
+      <p class="partners__container-text wow fadeInRight" data-wow-delay="0.3s">Transport and logistics company "MERJEN
+        YOL" - is an experienced participant
         in the cargo transportation market in Turkmenistan
         and beyond. We form, support and defend the principles of efficient logistics, taking into account your
         interests.</p>
     </div>
-    <picture>
+    <picture class="wow fadeIn" data-wow-delay="0.3s">
       <source srcset="./img/partners.webp" />
       <img src="./img/partners.png" alt="Partners" width="597px" height="597px">
     </picture>
   </section>
   <!-- THANKS -->
   <section class="thanks">
-    <h2 class="thanks__title">“We are glad to make a review to this such a great company”</h2>
-    <p class="thanks__text">Mr Rahat Myradow, СEO of Milli Osush</p>
-    <picture>
+    <h2 class="thanks__title wow fadeInRight" data-wow-delay="0.3s">“We are glad to make a review to this such a great
+      company”</h2>
+    <p class="thanks__text wow fadeInRight" data-wow-delay="0.3s">Mr Rahat Myradow, СEO of Milli Osush</p>
+    <picture class="wow fadeInRight" data-wow-delay="0.3s">
       <source srcset="./img/slider_thanks.webp" />
       <img src="./img/slider_thanks.png" alt="slider" width="320px" height="6px">
     </picture>
@@ -358,13 +363,13 @@
       <p class="footer__1-last">© 2022 Merjen Yol Logistics. All rights reserved</p>
     </div>
     <div class="footer__2">
-      <a href="#">ABOUT US</a>
+      <a href="#about">ABOUT US</a>
       <p href="#">What We Do</p>
       <p href="#">Blog</p>
       <p href="#">Careers</p>
     </div>
     <div class="footer__3">
-      <a href="#">SERVICES</a>
+      <a href="#job">SERVICES</a>
       <p href="#">Shipping</p>
       <p href="#">Logistics</p>
     </div>
@@ -375,5 +380,9 @@
     </div>
   </footer>
 </body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="./js/script.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/animation.js"></script>
 
 </html>
