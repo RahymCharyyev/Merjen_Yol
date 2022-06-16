@@ -43,7 +43,7 @@
     <nav class="header__nav wow fadeInDown" id="header__nav" data-wow-delay="0.5s">
       <div class="header__nav-logo " id="header__nav-logo"></div>
       <a id="header__nav-link1" href="#about">About us</a>
-      <a id="header__nav-link2" href="#job">Services</a>
+      <a id="header__nav-link2" href="#services">Services</a>
       <a id="header__nav-link3" href="#footer">Contacts</a>
       <div class="header__nav-dropdown">
         <a href="#" id="en" class="header__nav-dropbutton">EN</a>
@@ -66,12 +66,14 @@
         chosen route.
       </p>
       <div class="header__title-container wow fadeInRight" data-wow-delay="1.2s">
-        <a href="#">Find out more</a>
-        <div></div>
+        <a href="#">Find out more
+          <div class="header__title-container-arrow"></div>
+        </a>
       </div>
       <div class="header__title-container2 wow fadeInDown" data-wow-delay="1.5s">
-        <a href="#">Scroll down</a>
-        <div></div>
+        <a href="#">Scroll down
+          <div class="header__title-container2-arrow"></div>
+        </a>
       </div>
     </div>
   </header>
@@ -82,8 +84,9 @@
       Project
     </h2>
     <div class="about__link">
-      <a href="#">Learn more about us</a>
-      <div></div>
+      <a href="#">Learn more about us
+        <div class="about__link-arrow"></div>
+      </a>
     </div>
     <p class="about__text">
       The transport and logistics company "MERJEN YOL" is an experienced
@@ -93,7 +96,7 @@
     </p>
   </section>
   <!-- OUR STRENGTHS -->
-  <section class="strengths">
+  <section class="strengths" id="strengths">
     <div class="strengths__container">
       <h2 class="strengths__container-title1 wow fadeInRight" data-wow-delay="0.3s">Our strengths:</h2>
       <ul class="wow fadeInRight" data-wow-delay="0.3s">
@@ -125,14 +128,10 @@
         of oversized and heavy cargo, as well as bulk materials.Preparation of
         all related documentation. Loading and unloading control.
       </p>
-      <div class="strengths__container-link wow fadeInRight" data-wow-delay="0.3s">
-        <a href="#">Find out more</a>
-        <div></div>
-      </div>
     </div>
   </section>
   <!-- WHAT WE DO -->
-  <section class="job" id="job">
+  <section class="job">
     <picture class="job__img1 wow fadeInDown" data-wow-delay="0.3s">
       <source srcset="./img/what_we_do1.webp" />
       <img src="./img/what_we_do1.jpg" alt="What We Do" width="714px" height="830px" />
@@ -148,13 +147,10 @@
       activities, controlling <br />
       every link in the chain.
     </h2>
-    <div class="job__link wow fadeInRight" data-wow-delay="0.3s">
-      <a href="#">Find out more</a>
-      <div></div>
     </div>
   </section>
   <!-- TRANSPORTATION -->
-  <section class="transportation wow fadeInRight" data-wow-delay="0.3s">
+  <section class="transportation wow fadeInRight" data-wow-delay="0.3s" id="services">
     <div class="transportation__first">
       <div class="transportation__first-title">
         <h2>Ground Transportation</h2>
@@ -225,20 +221,21 @@
         </li>
       </ul>
   </section>
-  <!-- CAREER -->
-  <section class="career wow fadeInRight" data-wow-delay="0.3s">
-    <h2 class="career__title">Career</h2>
-    <p class="career__text">Transport and logistics company "MERJEN YOL" - is an experienced participant in the cargo
-      transportation market in Turkmenistan
-      and beyond. We form, support and defend the principles of efficient logistics, taking into account your interests.
+  <!-- IMPORT -->
+  <section class="import wow fadeInRight" data-wow-delay="0.3s" id="import">
+    <h2 class="import__title">Import and export</h2>
+    <p class="import__text">MERJEN YOL is also actively involved in projects to provide companies with the goods and
+      equipment necessary for their
+      work.
     </p>
-    <div class="career__link">
-      <a href="#">Find out more</a>
-      <div></div>
+    <div class="import__link wow fadeInRight" data-wow-delay="1.2s">
+      <a href="#">Find out more
+        <div class="import__link-arrow"></div>
+      </a>
     </div>
   </section>
   <!-- IMPORT -->
-  <section class="import">
+  <!-- <section class="import">
     <h2 class="import__title wow fadeInRight" data-wow-delay="0.3s">Import and export </h2>
     <p class="import__text wow fadeInRight" data-wow-delay="0.3s">Transport and logistics company "MERJEN YOL" - is an
       experienced participant in the cargo
@@ -257,7 +254,7 @@
     </div>
   </section>
   <!-- EXPORT -->
-  <section class="export wow fadeIn" data-wow-delay="0.3s">
+  <!-- <section class="export wow fadeIn" data-wow-delay="0.3s">
     <div class="export__img1">
       <picture>
         <source srcset="./img/export_1.webp" />
@@ -286,9 +283,9 @@
       </picture>
       <p>Transportation of heavy machinery, equipment, materials</p>
     </div>
-  </section>
+  </section>  -->
   <!-- BLOG -->
-  <section class="blog wow fadeInRight" data-wow-delay="0.3s" id="blog">
+  <!-- <section class="blog wow fadeInRight" data-wow-delay="0.3s" id="blog">
     <h2 class="blog__title">Blog</h2>
     <div class="blog__first">
       <picture>
@@ -333,9 +330,9 @@
       <source srcset="./img/slider.webp" />
       <img src="./img/slider.jpg" alt="slider" width="1220px" height="10px">
     </picture>
-  </section>
+  </section> -->
   <!-- PARTNERS -->
-  <section class="partners">
+  <section class="partners" id="partners">
     <div class="partners__container">
       <h2 class="partners__container-title wow fadeInRight" data-wow-delay="0.3s">Partners</h2>
       <p class="partners__container-text wow fadeInRight" data-wow-delay="0.3s">Transport and logistics company "MERJEN
@@ -344,10 +341,24 @@
         and beyond. We form, support and defend the principles of efficient logistics, taking into account your
         interests.</p>
     </div>
-    <picture class="wow fadeIn" data-wow-delay="0.3s">
-      <source srcset="./img/partners.webp" />
-      <img src="./img/partners.png" alt="Partners" width="597px" height="597px">
-    </picture>
+    <div class="partners__container-img">
+      <picture class="partners__container-img1 wow fadeIn" data-wow-delay="0.3s">
+        <source srcset="./img/asly_yag.webp" />
+        <img src="./img/asly_yag.jpg" alt="Asly Yag" width="300px" height="300px">
+      </picture>
+      <picture class="partners__container-img2 wow fadeIn" data-wow-delay="0.3s">
+        <source srcset="./img/arwana.webp" />
+        <img src="./img/arwana.jpg" alt="Arwana" width="300px" height="300px">
+      </picture>
+      <picture class="partners__container-img3 wow fadeIn" data-wow-delay="0.3s">
+        <source srcset="./img/prestige.webp" />
+        <img src="./img/prestige.jpg" alt="Home Prestige" width="300px" height="300px">
+      </picture>
+      <picture class="partners__container-img4 wow fadeIn" data-wow-delay="0.3s">
+        <source srcset="./img/levis.webp" />
+        <img src="./img/levis.jpg" alt="Levis" width="300px" height="300px">
+      </picture>
+    </div>
   </section>
   <!-- THANKS -->
   <section class="thanks">
@@ -363,26 +374,35 @@
   <footer class="footer" id="footer">
     <div class="footer__1">
       <img src="./img/header_logo.svg" alt="Logo" class="footer__logo" width="189px" height="30px">
-      <p>Ashgabat,Olympic Hotel 162A</p>
-      <p>Wrk hrs: 09:00 - 19:00</p>
-      <p>Phone: +993 61 82 59 26</p>
+      <p class="footer__1-text">Ashgabat, Olympic Hotel 2nd floor</p>
+      <p class="footer__1-text">Email: merjenyol@merjenyol.com</p>
+      <p class="footer__1-text">Phone: +993 12 464114</p>
       <p class="footer__1-last">© 2022 Merjen Yol Logistics. All rights reserved</p>
     </div>
     <div class="footer__2">
-      <a href="#about">ABOUT US</a>
-      <p href="#">What We Do</p>
-      <p href="#">Blog</p>
-      <p href="#">Careers</p>
+      <a class="footer_big" href="#about">ABOUT US</a>
+      <a class="footer_small" href="#strengths">Strengths</a>
+      <!-- <p href="#">Blog</p> -->
+      <!-- <p href="#">Careers</p> -->
     </div>
     <div class="footer__3">
-      <a href="#job">SERVICES</a>
-      <p href="#">Shipping</p>
-      <p href="#">Logistics</p>
+      <a class="footer_big" href="#services">SERVICES</a>
+      <a class="footer_small" href="#services">Transport and logistic</a>
+      <a class="footer_small" href="#import">Import and export</a>
+      <div class="footer__3-socials">
+        <a href="https://wa.me/99362007070"><img src="./img/up.svg" alt="WhatsUp" width="40px" height="40px"></a>
+        <a href=" https://www.instagram.com/merjen_yol/"><img src="./img/insta.svg" alt="Instagram" width="40px"
+            height="40px"></a>
+        <a href="https://www.facebook.com/MERJEN-YOL-109304411815104/"><img src="./img/fc.svg" alt="Facebook"
+            width="40px" height="40px"></a>
+        <a href="https://www.linkedin.com/company/86319757/admin/"><img src="./img/in.svg" alt="LinkedIn" width="40px"
+            height="40px"></a>
+      </div>
     </div>
     <div class="footer__4">
-      <a href="#">COMPANY</a>
-      <p href="#">Careers</p>
-      <p href="#">Contact us</p>
+      <a class="footer_big" class="footer_big" href="#">COMPANY</a>
+      <a class="footer_small" href="#partners">Partners</a>
+      <!-- <p href="#">Contact us</p> -->
     </div>
   </footer>
 </body>
