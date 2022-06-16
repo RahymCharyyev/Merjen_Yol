@@ -831,7 +831,13 @@ html {
   column-gap: 20px;
 }
 
+.footer__3-socials a:hover {
+  filter: brightness(150%);
+  transition: 0.2s;
+}
+
 .footer__3-socials a {
   padding: 0;
   margin: 0;
+  transition: 0.2s;
 }

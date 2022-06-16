@@ -31,13 +31,37 @@
   <!-- Styles -->
   <link rel="stylesheet" href="style/normalize.css" />
   <link rel="stylesheet" href="style/index.css" />
-  <link rel="stylesheet" href="style/burger.css" />
+  <link rel="stylesheet" href="style/modal_header.css" />
+  <link rel="stylesheet" href="style/modal_about.css" />
+  <link rel="stylesheet" href="style/modal_import.css" />
   <link rel="stylesheet" href="style/animate.css">
   <link rel="stylesheet" href="style/animate.min.css">
   <title>MERJEN YOL</title>
 </head>
 
 <body>
+  <div id="shopwindow" class="shopwindow bounceIn">
+    <div id="modalnoye_okno">+</div>
+    <div class="modalnoye">
+      <div><span><span>MERJEN YOL acquired in close cooperation with the European logistics
+            giant, the Austrian company Gebrüder Weiss. We cooperate with leading
+            international transport companies. Interacting with all participants
+            in the transport and logistics chain, we control each stage of the
+            chosen route.</span></span></div>
+    </div>
+  </div>
+  <div id="shopwindow1" class="shopwindow bounceIn">
+    <div id="modalnoye_okno1">+</div>
+    <div class="modalnoye1">
+      <div><span><span>MERJEN YOL.</span></span></div>
+    </div>
+  </div>
+  <div id="shopwindow2" class="shopwindow bounceIn">
+    <div id="modalnoye_okno2">+</div>
+    <div class="modalnoye2">
+      <div><span><span>MERJEN YOL.</span></span></div>
+    </div>
+  </div>
   <!-- HEADER -->
   <header class="header">
     <nav class="header__nav wow fadeInDown" id="header__nav" data-wow-delay="0.5s">
@@ -66,7 +90,7 @@
         chosen route.
       </p>
       <div class="header__title-container wow fadeInRight" data-wow-delay="1.2s">
-        <a href="#">Find out more
+        <a id="modal_header" href="#open">Find out more
           <div class="header__title-container-arrow"></div>
         </a>
       </div>
@@ -84,7 +108,7 @@
       Project
     </h2>
     <div class="about__link">
-      <a href="#">Learn more about us
+      <a id="modal_about" href="#open">Learn more about us
         <div class="about__link-arrow"></div>
       </a>
     </div>
@@ -229,7 +253,7 @@
       work.
     </p>
     <div class="import__link wow fadeInRight" data-wow-delay="1.2s">
-      <a href="#">Find out more
+      <a id="modal_import" href="#open">Find out more
         <div class="import__link-arrow"></div>
       </a>
     </div>
@@ -310,6 +334,8 @@
 <script src="./js/script.js"></script>
 <script src="./js/wow.min.js"></script>
 <script src="./js/animation.js"></script>
-<script src="./js/lang.js"></script>
+<script src="./js/modal_header.js"></script>
+<script src="./js/modal_about.js"></script>
+<script src="./js/modal_import.js"></script>
 
 </html>
