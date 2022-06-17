@@ -230,7 +230,7 @@ html {
   transition: 0.2s;
 }
 
-.header__title-container-arrow:hover {
+#header__arrow.fix {
   background-image: url(../img/white_arrow.png);
   width: 60px;
   height: 17px;
@@ -269,7 +269,7 @@ html {
   transition: 0.2s;
 }
 
-.header__title-container2-arrow:hover {
+#scroll__arrow.fix {
   background-image: url(../img/white_arrow.png);
   width: 60px;
   height: 17px;
@@ -323,7 +323,7 @@ html {
   transition: 0.2s;
 }
 
-.about__link-arrow:hover {
+#about__arrow.fix {
   background-image: url(../img/blue_arrow.png);
   width: 60px;
   height: 17px;
@@ -654,7 +654,7 @@ html {
   transition: 0.2s;
 }
 
-.import__link-arrow:hover {
+#import__arrow.fix {
   background-image: url(../img/white_arrow.png);
   width: 60px;
   height: 17px;
