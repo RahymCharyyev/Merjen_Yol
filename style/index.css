@@ -538,7 +538,7 @@ html {
 .job__text {
   grid-column: 2/3;
   grid-row: 2/3;
-  width: 150px;
+  width: 200px;
   height: 35px;
   font-weight: var(--bold);
   font-size: var(--h4);
@@ -791,7 +791,7 @@ html {
 }
 
 .thanks__title {
-  width: 510px;
+  width: 518px;
   font-weight: var(--semi-bold);
   font-size: var(--h2);
   line-height: 65px;
