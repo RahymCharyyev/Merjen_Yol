@@ -7,7 +7,6 @@ $(window).scroll(function () {
     jQuery("#header__nav").addClass("fix");
     jQuery("#en").addClass("fix");
     jQuery("#ru").addClass("fix");
-    jQuery("#tm").addClass("fix");
   } else {
     jQuery("#header__nav-link1").removeClass("fix");
     jQuery("#header__nav-link2").removeClass("fix");
@@ -16,6 +15,5 @@ $(window).scroll(function () {
     jQuery("#header__nav").removeClass("fix");
     jQuery("#en").removeClass("fix");
     jQuery("#ru").removeClass("fix");
-    jQuery("#tm").removeClass("fix");
   }
 });
