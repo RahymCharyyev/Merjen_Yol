@@ -82,10 +82,10 @@ html {
 
 .header {
   background-image: url(../img/header_img.jpg);
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 1000px;
+  width: 120em;
 }
 
 .header__nav {
@@ -379,18 +379,18 @@ html {
 /* OUR STRENGTHS */
 
 .strengths {
-  height: 982px;
   background-image: repeating-linear-gradient(
     90deg,
-    #4154a7 0px,
-    #4154a7 480px,
-    #4256b1 480px,
-    #4256b1 960px,
-    #4154a7 960px,
-    #4154a7 1440px,
-    #4256b1 1440px,
-    #4256b1 1920px
+    #4154a7 0em,
+    #4154a7 30em,
+    #4256b1 30em,
+    #4256b1 60em,
+    #4154a7 60em,
+    #4154a7 90em,
+    #4256b1 90em,
+    #4256b1 120em
   );
+  width: 120em;
 }
 
 .strengths__container {
@@ -442,7 +442,7 @@ html {
 .strengths__container-img {
   grid-column: 1/3;
   grid-row: 2/3;
-  padding-top: 41px;
+  padding-top: 42px;
 }
 
 .strengths__container-title2 {
@@ -651,6 +651,7 @@ html {
 
 .import {
   height: 800px;
+  width: 120em;
   display: flex;
   flex-direction: column;
   margin-top: 262px;
@@ -769,6 +770,7 @@ html {
 
 .thanks {
   height: 900px;
+  width: 120em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -830,6 +832,7 @@ html {
   display: flex;
   flex-direction: row;
   height: 500px;
+  width: 120em;
   background-image: url(../img/footer_img.jpg);
   background-position: center;
   background-repeat: no-repeat;
