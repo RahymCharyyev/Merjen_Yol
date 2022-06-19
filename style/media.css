@@ -1,10 +1,74 @@
-/* MEDIA QUERIES */
+/* MEDIA QUERIES
 @media (max-width: 1500px) {
-  .header {
-    background-image: url(../img/header_img.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 1000px;
+  :root {
+    --h1: 3.75em;
+    --h2: 3em;
+    --h3: 2em;
+    --h4: 1.25em;
+    --link: 1.25em;
+    --text: 1em;
+  }
+  .header__nav {
+    width: 1500px;
+  }
+  #header__nav.fix {
+    width: 1500px;
+  }
+  .about {
+    padding-left: 264px;
+    margin-top: 164px;
+  }
+
+  .about__title {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+
+  .about__link {
+    grid-row: 1/2;
+    align-items: center;
+    align-self: end;
+  }
+
+  .about__text {
+    grid-row: 1/2;
+    grid-column: 2/4;
+    margin: 0;
+    padding-top: 15px;
+    max-width: 453px;
   }
 }
+
+@media (max-width: 800px) {
+  :root {
+    --h1: 3em;
+    --h2: 3em;
+    --h3: 2em;
+    --h4: 1.25em;
+    --link: 1.25em;
+    --text: 1em;
+  }
+  .header__nav {
+    width: 800px;
+  }
+  #header__nav.fix {
+    width: 800px;
+  }
+}
+
+@media (max-width: 400px) {
+  :root {
+    --h1: 2.25em;
+    --h2: 2.25em;
+    --h3: 2em;
+    --h4: 1.25em;
+    --link: 1em;
+    --text: 0.875em;
+  }
+  .header__nav {
+    width: 400px;
+  }
+  #header__nav.fix {
+    width: 400px;
+  }
+} */
