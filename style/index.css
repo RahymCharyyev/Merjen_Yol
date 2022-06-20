@@ -666,7 +666,7 @@ html {
 .partners {
   display: flex;
   flex-direction: row;
-  padding: 313px 0 273px 390px;
+  padding: 313px 0 273px 200px;
 }
 
 .partners__container {
