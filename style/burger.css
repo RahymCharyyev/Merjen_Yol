@@ -1,134 +1,152 @@
-#menu__toggle {
-  opacity: 0;
-}
-#menu__toggle:checked ~ .menu__btn > span {
-  transform: rotate(45deg);
-}
-#menu__toggle:checked ~ .menu__btn > span::before {
-  top: 0;
-  transform: rotate(0);
-}
-#menu__toggle:checked ~ .menu__btn > span::after {
-  top: 0;
-  transform: rotate(90deg);
-}
-#menu__toggle:checked ~ .menu__box {
-  visibility: visible;
-  top: 0;
-}
-.menu__btn {
-  display: none;
-}
-.menu__btn > span {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: #616161;
-  transition-duration: 0.25s;
-}
-.menu__btn > span::before,
-.menu__btn > span::after {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: #616161;
-  transition-duration: 0.25s;
-}
-.menu__btn > span::before {
-  content: "";
-  top: -8px;
-}
-.menu__btn > span::after {
-  content: "";
-  top: 8px;
-}
-.menu__box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  visibility: hidden;
-  left: 0;
-  top: -100%;
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
-  list-style: none;
-  padding: 0;
-  background-color: #eceff1;
-  box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
-  transition-duration: 0.25s;
-  z-index: 1;
-}
-.menu__item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1.5em;
-  cursor: pointer;
-  color: var(--black);
-  font-family: "Montserrat-regular", sans-serif;
-  font-size: 1.5em;
+#menu a {
   text-decoration: none;
-  transition: 0.2s;
-}
-.menu__item {
-  text-decoration: none;
-  position: relative;
-}
-.menu__item::before {
-  content: "";
-  top: 1.3em;
-  left: 0;
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: var(--black);
-  transition: 0.2s;
-  transform: scaleX(0);
-}
-.menu__item:hover:before {
-  transform: scaleX(1);
+  color: var(--dark_text);
+  transition: color 0.3s ease;
 }
 
-/* MEDIA QUERIES BURGER MENU */
-@media (max-width: 1920px) {
-  .menu__btn {
-    display: inline-block;
+#menu a:hover {
+  color: var(--link_hover);
+}
+
+#menuToggle {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 100px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: var(--white);
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+#burger.fix,
+#burger1.fix,
+#burger2.fix {
+  background: var(--dark_text);
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: var(--dark_text);
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  opacity: 1;
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu {
+  position: absolute;
+  width: 750px;
+  margin: -100px 0 0 0;
+  padding: 50px;
+  padding-top: 125px;
+  right: -100px;
+  background: var(--white);
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  opacity: 1;
+}
+
+#menu li {
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+/*
+ * And let's fade it in from the left
+ */
+#menuToggle input:checked ~ ul {
+  transform: none;
+  opacity: 1;
+}
+
+@media (max-width: 750px) {
+  #menuToggle {
+    display: block;
     position: absolute;
-    width: 40px;
-    margin-left: 30vw;
-    align-items: center;
-    z-index: 2;
-    transition: 0.4s;
-    cursor: pointer;
+    top: 36px;
+    right: 65px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
   }
 }
-@media (max-width: 790px) {
-  .menu__btn {
-    margin-left: 28vw;
-  }
-}
-@media (max-width: 620px) {
-  .menu__btn {
-    margin-left: 27vw;
-  }
-}
-@media (max-width: 530px) {
-  .menu__btn {
-    margin-left: 26vw;
-  }
-}
-@media (max-width: 400px) {
-  .menu__btn {
-    margin-left: 24vw;
-  }
-}
-@media (max-width: 320px) {
-  .menu__btn {
-    margin-left: 20vw;
+@media (max-width: 490px) {
+  #menu {
+    position: absolute;
+    width: 360px;
+    margin: -100px 0 0 0;
+    padding: 50px;
+    padding-top: 125px;
+    right: -100px;
+    background: var(--white);
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    opacity: 1;
   }
 }

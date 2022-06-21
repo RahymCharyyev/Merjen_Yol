@@ -42,11 +42,10 @@
 }
 
 .modalnoye div {
-  text-align: center;
+  text-align: justify;
 }
 
 .modalnoye span {
-  text-align: center;
   color: var(--white);
   font-size: var(--text);
 }
