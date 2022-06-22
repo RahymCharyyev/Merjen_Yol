@@ -23,35 +23,35 @@
 @font-face {
   font-family: "Manrope";
   font-display: swap;
-  src: url("Manrope-Regular.ttf");
+  src: url(".././fonts/Manrope-Regular.ttf");
   font-weight: var(--regular);
   font-style: normal;
 }
 @font-face {
   font-family: "Manrope";
   font-display: swap;
-  src: url("Manrope-Medium.ttf");
+  src: url(".././fonts/Manrope-Medium.ttf");
   font-weight: var(--medium);
   font-style: normal;
 }
 @font-face {
   font-family: "Manrope";
   font-display: swap;
-  src: url("Manrope-SemiBold.ttf");
+  src: url(".././fonts/Manrope-SemiBold.ttf");
   font-weight: var(--semi-bold);
   font-style: normal;
 }
 @font-face {
   font-family: "Manrope";
   font-display: swap;
-  src: url("Manrope-Bold.ttf");
+  src: url(".././fonts/Manrope-Bold.ttf");
   font-weight: var(--bold);
   font-style: normal;
 }
 @font-face {
   font-family: "Manrope";
   font-display: swap;
-  src: url("Manrope-ExtraBold.ttf");
+  src: url(".././fonts/Manrope-ExtraBold.ttf");
   font-weight: var(--extra-bold);
   font-style: normal;
 }
@@ -371,7 +371,7 @@ html {
   margin: 0;
   padding: 0 0 0 60px;
   max-width: 484px;
-  font-weight: var(--medium);
+  font-weight: var(--light);
   font-size: var(--text);
   line-height: 30px;
   align-items: center;
