@@ -541,7 +541,7 @@ html {
 }
 
 .transportation__second {
-  padding-left: 240px;
+  padding-left: 180px;
 }
 
 .transportation__fourth {
@@ -861,4 +861,9 @@ html {
   padding: 0;
   margin: 0;
   transition: 0.2s;
+}
+
+.footer__mobile,
+.footer__mobile-socials {
+  display: none;
 }

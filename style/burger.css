@@ -111,6 +111,7 @@
 #menu li {
   padding: 10px 0;
   font-size: 20px;
+  text-align: center;
 }
 
 /*
@@ -132,21 +133,38 @@
     user-select: none;
   }
 }
+@media (max-width: 630px) {
+  #menu {
+    width: 630px;
+  }
+}
+@media (max-width: 530px) {
+  #menu {
+    width: 530px;
+  }
+}
 @media (max-width: 490px) {
   #menu {
-    position: absolute;
-    width: 360px;
-    margin: -100px 0 0 0;
-    padding: 50px;
-    padding-top: 125px;
-    right: -100px;
-    background: var(--white);
-    list-style-type: none;
-    -webkit-font-smoothing: antialiased;
-    /* to stop flickering of text in safari */
-    transform-origin: 0% 0%;
-    transform: translate(100%, 0);
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-    opacity: 1;
+    width: 490px;
+  }
+}
+@media (max-width: 465px) {
+  #menu {
+    width: 465px;
+  }
+}
+@media (max-width: 420px) {
+  #menu {
+    width: 420px;
+  }
+}
+@media (max-width: 414px) {
+  #menu {
+    width: 414px;
+  }
+}
+@media (max-width: 365px) {
+  #menu {
+    width: 365px;
   }
 }
