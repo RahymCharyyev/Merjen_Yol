@@ -4,7 +4,8 @@ function openbox(id) {
   );
   for (var i = 0; i < all.length; i++) {
     if (all[i].id == id) {
-      all[i].style.display = all[i].style.display == "none" ? "block" : "none";
+      all[i].style.display =
+        all[i].style.display == "block" ? "block" : "block";
     } else {
       all[i].style.display = "none";
     }

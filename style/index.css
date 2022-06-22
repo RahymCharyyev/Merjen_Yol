@@ -432,7 +432,8 @@ html {
 }
 
 .strengths__container li:hover {
-  color: var(--white);
+  background: no-repeat 0 12px url(../img/Line_hover.png);
+  color: var(--link_hover);
   transition: 0.2s;
 }
 
@@ -812,6 +813,10 @@ html {
   padding-top: 44px;
 }
 
+.footer__1 a {
+  text-decoration: none;
+}
+
 .footer_big {
   font-weight: var(--extra-bold);
   font-size: var(--link);
@@ -833,7 +838,8 @@ html {
 }
 
 .footer_big:hover,
-.footer_small:hover {
+.footer_small:hover,
+.footer__1-text:hover {
   color: var(--link_hover);
   transition: 0.2s;
 }
