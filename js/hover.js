@@ -23,12 +23,12 @@ $(document).ready(function () {
       jQuery("#about__arrow").removeClass("fix");
     }
   );
-  $("#modal_import").hover(
+  $("#modal_career").hover(
     function () {
-      jQuery("#import__arrow").addClass("fix");
+      jQuery("#career__arrow").addClass("fix");
     },
     function () {
-      jQuery("#import__arrow").removeClass("fix");
+      jQuery("#career__arrow").removeClass("fix");
     }
   );
 });

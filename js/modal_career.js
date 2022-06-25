@@ -1,4 +1,4 @@
-let open2_modal = document.getElementById("modal_import");
+let open2_modal = document.getElementById("modal_career");
 let close2_modal = document.getElementById("modalnoye_okno2");
 let modal2 = document.getElementById("shopwindow2");
 let body2 = document.getElementsByTagName("body2")[0];

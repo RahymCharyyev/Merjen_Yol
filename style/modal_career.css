@@ -42,11 +42,11 @@
 }
 
 .modalnoye2 div {
-  text-align: center;
+  text-align: justify;
 }
 
 .modalnoye2 span {
-  text-align: center;
   color: var(--white);
   font-size: var(--text);
+  line-height: 40px;
 }

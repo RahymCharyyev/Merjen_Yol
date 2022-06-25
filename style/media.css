@@ -135,24 +135,24 @@
   .transportation__fourth-title {
     gap: 15px;
   }
-  .import {
+  .career {
     height: 700px;
     margin-top: 290px;
   }
-  .import__title {
+  .career__title {
     padding: 252px 0 0 278px;
   }
-  .import__text {
+  .career__text {
     width: 362px;
     padding: 18px 0 0 278px;
   }
-  .import__link {
+  .career__link {
     padding: 18px 0 0 278px;
   }
-  .import__link a {
+  .career__link a {
     column-gap: 15px;
   }
-  .import__link-arrow {
+  .career__link-arrow {
     width: 25px;
     height: 2px;
   }
@@ -405,16 +405,16 @@
   .transportation__fourth-title {
     gap: 45px;
   }
-  .import {
+  .career {
     margin-top: 250px;
   }
-  .import__title {
+  .career__title {
     padding: 252px 0 0 132px;
   }
-  .import__text {
+  .career__text {
     padding: 18px 0 0 132px;
   }
-  .import__link {
+  .career__link {
     padding: 18px 0 0 132px;
   }
   .partners {
@@ -694,16 +694,16 @@
   .transportation__fourth-title {
     gap: 25px;
   }
-  .import {
+  .career {
     margin-top: 150px;
   }
-  .import__title {
+  .career__title {
     padding: 252px 0 0 65px;
   }
-  .import__text {
+  .career__text {
     padding: 18px 0 0 65px;
   }
-  .import__link {
+  .career__link {
     padding: 18px 0 0 65px;
   }
   .partners {
@@ -843,17 +843,17 @@
     padding: 40px 0 0 10px;
     align-self: center;
   }
-  .import {
+  .career {
     margin-top: 150px;
   }
-  .import__title {
+  .career__title {
     padding: 250px 0 0 50px;
   }
-  .import__text {
+  .career__text {
     width: 320px;
     padding: 18px 0 0 50px;
   }
-  .import__link {
+  .career__link {
     padding: 18px 0 0 50px;
   }
   .partners {
@@ -999,7 +999,7 @@
   .job__img2 {
     margin-left: 180px;
   }
-  .import {
+  .career {
     margin-top: 150px;
   }
   .transportation__first-title,
@@ -1011,14 +1011,14 @@
   .transportation__third-title {
     width: 250px;
   }
-  .import__title {
+  .career__title {
     padding: 250px 0 0 20px;
   }
-  .import__text {
+  .career__text {
     width: 320px;
     padding: 18px 0 0 20px;
   }
-  .import__link {
+  .career__link {
     padding: 18px 0 0 20px;
   }
   .partners {

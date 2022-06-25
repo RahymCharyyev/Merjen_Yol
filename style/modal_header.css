@@ -36,8 +36,8 @@
   transform: rotate(135deg);
 }
 .modalnoye {
-  padding: 30px;
-  margin: 100px auto;
+  padding: 0px;
+  margin: 20px auto;
   max-width: 750px;
 }
 
@@ -48,4 +48,5 @@
 .modalnoye span {
   color: var(--white);
   font-size: var(--text);
+  line-height: 40px;
 }
