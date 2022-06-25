@@ -156,6 +156,12 @@
     width: 25px;
     height: 2px;
   }
+  .import {
+    padding: 170px 0 0 225px;
+  }
+  .import__img {
+    column-gap: 200px;
+  }
   .partners {
     padding: 319px 0 253px 100px;
   }
@@ -235,6 +241,12 @@
   }
   .strengths__container-text {
     padding: 380px 750px 0 0;
+  }
+  .import {
+    padding: 170px 0 0 125px;
+  }
+  .import__img {
+    column-gap: 100px;
   }
   .partners {
     padding: 200px 0 253px 50px;
@@ -417,6 +429,33 @@
   .career__link {
     padding: 18px 0 0 132px;
   }
+  .export {
+    margin: 264px 0 0 0;
+  }
+  .export__img1 p,
+  .export__img2 p,
+  .export__img3 p,
+  .export__img4 p {
+    font-size: var(--h4);
+  }
+  .export__img1 img,
+  .export__img2 img,
+  .export__img3 img,
+  .export__img4 img {
+    width: 300px;
+    height: 330px;
+  }
+  .import {
+    padding: 170px 0 0 25px;
+  }
+  .import__img {
+    column-gap: 50px;
+  }
+  .import__img img {
+    width: 325px;
+    height: 500px;
+    column-gap: 50px;
+  }
   .partners {
     flex-direction: column;
     padding: 187px 0 260px 100px;
@@ -584,6 +623,24 @@
   .strengths__container-img {
     padding-top: 252px;
   }
+  .export {
+    display: flex;
+    flex-direction: column;
+    row-gap: 85px;
+    align-self: center;
+  }
+  .export__img1 img,
+  .export__img2 img,
+  .export__img3 img,
+  .export__img4 img {
+    width: 300px;
+    height: 330px;
+  }
+  .import__img img {
+    width: 275px;
+    height: 450px;
+    column-gap: 50px;
+  }
   .footer__1 {
     padding: 0 0 0 100px;
   }
@@ -706,6 +763,14 @@
   .career__link {
     padding: 18px 0 0 65px;
   }
+  .import__text {
+    width: 450px;
+  }
+  .import__img {
+    flex-direction: column;
+    row-gap: 50px;
+    align-self: left;
+  }
   .partners {
     flex-direction: column;
     padding: 120px 0 160px 20px;
@@ -775,6 +840,9 @@
 @media (max-width: 465px) {
   .header__title-container2 a {
     padding-right: 300px;
+  }
+  .import__text {
+    width: 350px;
   }
 }
 @media (max-width: 420px) {
@@ -1043,5 +1111,18 @@
 @media (max-width: 365px) {
   .header__title-container2 a {
     margin-right: 400px;
+  }
+  .export__img1 img,
+  .export__img2 img,
+  .export__img3 img,
+  .export__img4 img {
+    width: 250px;
+    height: 280px;
+  }
+  .import__title {
+    line-height: 40px;
+  }
+  .import__text {
+    width: 320px;
   }
 }
