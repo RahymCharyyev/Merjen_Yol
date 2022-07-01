@@ -1017,6 +1017,7 @@
 @media (max-width: 414px) {
   .header {
     min-height: 900px;
+    background-position: left center;
   }
   .header__nav-logo {
     margin-left: 100px;

@@ -1,11 +1,11 @@
 function Rotator(start_from) {
-  var phrases = [
+  let phrases = [
     "Г-н Рахат Мирадов, ГД  Milli Osush",
     "Г-н Рахат Мирадов, ГД  Milli Osush",
     "Г-н Рахат Мирадов, ГД  Milli Osush",
   ];
-  var total = phrases.length;
-  var interval = 5000;
+  let total = phrases.length;
+  let interval = 5000;
   if (void 0 === start_from) {
     start_from = 0;
   }

@@ -7,7 +7,7 @@
   <meta name="theme-color" content="#F7F9F9" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="description"
-    content="MERJEN ÝOL is an experienced participant in the cargo transportation market in Turkmenistan and beyond" />
+    content="MERJEN ÝOL – опытный участник рынка грузоперевозок в Туркменистане и за его пределами." />
   <meta name="robots" content="all" />
   <meta name="format-detection" content="phone=no" />
   <meta name="skype_toolbar" content="skype_toolbar_parser_compatible" />
@@ -38,9 +38,7 @@
   <!-- Styles -->
   <link rel="stylesheet" href="./style/normalize.css" />
   <link rel="stylesheet" href="./style/index.css" />
-  <link rel="stylesheet" href="./style/modal_header.css" />
-  <link rel="stylesheet" href="./style/modal_about.css" />
-  <link rel="stylesheet" href="./style/modal_career.css" />
+  <link rel="stylesheet" href="./style/modals.css" />
   <link rel="stylesheet" href="./style/animate.min.css">
   <link rel="stylesheet" href="./style/media.css">
   <link rel="stylesheet" href="./style/burger.css">
@@ -49,9 +47,9 @@
 
 <body>
   <!-- Modals -->
-  <div id="shopwindow" class="shopwindow bounceIn">
-    <div id="modalnoye_okno">+</div>
-    <div class="modalnoye">
+  <div id="modal_header-bg" class="modal_header-bg fadeInRight">
+    <div id="modal_header-text"><img src="./img/modal_arrow.png" alt="Modal arrow"></div>
+    <div class="modal_header">
       <div><span><span>С 2013 года транспортно-логистическая компания «MERJEN ÝOL» – специалист в сфере мультимодальных
             перевозок (железнодорожные, морские, автомобильные и авиаперевозки). Наша компания постоянно растет и
             развивается,
@@ -74,9 +72,9 @@
           </span></span></div>
     </div>
   </div>
-  <div id="shopwindow1" class="shopwindow bounceIn">
-    <div id="modalnoye_okno1">+</div>
-    <div class="modalnoye1">
+  <div id="modal_about-bg" class="modal_about-bg fadeInRight">
+    <div id="modal_about-text"><img src="./img/modal_arrow.png" alt="Modal arrow"></div>
+    <div class="modal_about">
       <div><span>Фундаментальные принципы предоставления услуг и современный облик компания «MERJEN YOL» приобрела в
           тесном
           сотрудничестве с европейскими логистическими гигантами и ведущими международными транспортными компаниями. Мы
@@ -87,9 +85,9 @@
           </span></span></div>
     </div>
   </div>
-  <div id="shopwindow2" class="shopwindow bounceIn">
-    <div id="modalnoye_okno2">+</div>
-    <div class="modalnoye2">
+  <div id="modal_import-bg" class="modal_import-bg fadeInRight">
+    <div id="modal_import-text"><img src="./img/modal_arrow.png" alt="Modal arrow"></div>
+    <div class="modal_import">
       <div><span><span>Компания "MERJEN YOL" также активно участвует в тендерах на обеспечение местных и зарубежных
             компаний необходимыми для
             работы товарами, оборудованием и сырьем. Благодаря тому, что основной профиль нашей компании - транспорт и
@@ -105,7 +103,7 @@
     </div>
   </div>
   <!-- HEADER -->
-  <header class="header">
+  <header class="header" id="header">
     <nav role="navigation" class="header__nav wow fadeInDown" id="header__nav" data-wow-delay="0.5s">
       <div id="menuToggle">
         <input type="checkbox" />
@@ -125,9 +123,6 @@
           <a href="./index.html">
             <li>RU</li>
           </a>
-          <a href="./lang/en/index.html">
-            <li>EN</li>
-          </a>
       </div>
       </div>
       </ul>
@@ -136,16 +131,11 @@
       <a class="header__nav-link" id="header__nav-link1" href="#about">О нас</a>
       <a class="header__nav-link" id="header__nav-link2" href="#services">Услуги</a>
       <a class="header__nav-link" id="header__nav-link3" href="#footer">Контакты</a>
-      <div class="header__nav-dropdown">
-        <a href="./index.html" id="ru" class="header__nav-dropbutton">RU</a>
-        <div class="header__nav-dropdown-content">
-          <a href="./lang/en/index.html" id="en">EN</a>
-        </div>
-      </div>
+      <a class="header__nav-link" id="header__nav-link4" href="./index.html">RU</a>
     </nav>
     <div class="header__title">
       <h1 class="header__title-h1 wow fadeInRight" data-wow-delay="0.8s">
-        MERJEN ÝOL – сопричастность <br />делу каждого клиента <br /> и европейское качество услуг.
+        Европейское качество услуг <br /> в любой точке мира.
       </h1>
       <p class="header__title-text wow fadeInRight" data-wow-delay="1s">
         Мы формируем и поддерживаем принципы эффективной логистики, чтобы предоставить нашим клиентам экономичные,
@@ -157,17 +147,17 @@
           <div id="header__arrow" class="header__title-container-arrow"></div>
         </a>
       </div>
-      <div class="header__title-container2 wow fadeInDown" data-wow-delay="1.5s">
-        <a id="scroll__link" href="#footer">Прокрути вниз
-          <div id="scroll__arrow" class="header__title-container2-arrow"></div>
-        </a>
+      <div class="header__title-container2 wow fadeInRight" data-wow-delay="1.2s">
+        <a class="header__vert-link header__vert-link1" href="#strengths">Уникальное предложение</a>
+        <a class="header__vert-link header__vert-link2" href="#services">Транспорт и логистика</a>
+        <a class="header__vert-link header__vert-link3" href="#import">Импорт и экспорт</a>
       </div>
     </div>
   </header>
   <!-- ABOUT US -->
   <section class="about wow fadeInRight" data-wow-delay="0.3s">
     <h2 class=" about__title" id="about">
-      О Нашем <br> Проекте
+      О Нас
     </h2>
     <div class="about__link">
       <a id="modal_about" href="#open">Узнать больше
@@ -191,7 +181,7 @@
           Консультации в выборе транспорта и подходящего маршрута
         </li>
         <li id="link4" onclick="openbox('box4'); return false">
-          Перевозки груза сборным и выделенным транспортом
+          Полная и частичная загрузка
         </li>
         <li id="link5" onclick="openbox('box5'); return false">На связи 24/7</li>
         <li id="link6" onclick="openbox('box6'); return false">
@@ -259,10 +249,7 @@
       width="455px" height="400px" />
     <p class="job__text wow fadeInRight" data-wow-delay="0.3s">Что мы делаем</p>
     <h2 class="job__title wow fadeInRight" data-wow-delay="0.3s">
-      Мы управляем логистической <br />
-      деятельностью и контролируем <br />
-      «от двери до двери» <br />
-      каждое звено цепи.
+      Экономим <br /> ваши время и деньги – <br /> строим эффективную <br /> цепь поставок.
     </h2>
     </div>
   </section>
@@ -337,33 +324,17 @@
         </li>
       </ul>
   </section>
-  <!-- CAREER -->
-  <section class="career wow fadeInRight" data-wow-delay="0.3s" id="career">
-    <h2 class="career__title">Карьера</h2>
-    <p class="career__text">Деятельность "MERJEN YOL" строится на профессионализме и сплоченной работе команды.
-      Мы сотрудничаем с лучшими, чтобы предложить нашим клиентам продуманные транспортные маршруты и эффективные
-      логистические
-      решения. Мы всегда рады приветствовать в команде новые ценные кадры, которые вместе с нами будут открывать все
-      новые возможности
-      в мире логистики.
-    </p>
-    <div class="career__link wow fadeInRight" data-wow-delay="0.3s">
-      <a id="modal_career" href="#open">Узнать больше
-        <div id="career__arrow" class="career__link-arrow"></div>
-      </a>
-    </div>
-  </section>
   <!-- IMPORT -->
-  <section class="import">
-    <h2 class="import__title">Импорт и экспорт</h2>
-    <p class="import__text">Транспортно-логистическая компания «MERJEN YOL» - опытный участник рынка грузоперевозок в
-      Туркменистане
-      и за его пределами. Мы формируем, поддерживаем и отстаиваем принципы эффективной логистики, учитывая
-      ваши интересы.
-    </p>
-    <div class="import__img">
-      <img src="./img/import_img.png" alt="import and export" width="425px" height="600px">
-      <img src="./img/import_img.png" alt="import and export" width="425px" height="600px">
+  <section class="import wow fadeInRight" data-wow-delay="0.3s" id="import">
+    <h2 class="import__title">Импорт и экспорт </h2>
+    <div class="import__link wow fadeInRight" data-wow-delay="0.3s">
+      <div class="import__text">
+        «MERJEN YOL» также активно участвует в проектах по обеспечению компаний необходимыми для работы товарами и
+        оборудованием.
+      </div>
+      <a id="modal_import" href="#open">Узнать больше
+        <div id="import__arrow" class="import__link-arrow"></div>
+      </a>
     </div>
   </section>
   <!-- EXPORT -->
@@ -387,25 +358,49 @@
       <p>Бытовая химия и товары <br> домашнего пользования</p>
     </div>
   </section>
+  <!-- CAREER -->
+  <section class="career wow fadeInRight" data-wow-delay="0.3s" id="career">
+    <h2 class="career__title wow fadeInDown" data-wow-delay="0.4s">Карьера</h2>
+    <div class="career__text wow fadeInDown" data-wow-delay="0.4s">
+      <p>Деятельность "MERJEN YOL" строится на профессионализме и сплоченной работе команды.</p>
+      <br />
+      <p> Мы сотрудничаем с лучшими, чтобы предложить нашим клиентам продуманные транспортные маршруты и эффективные
+        логистические решения.</p>
+      <br />
+      <p>Мы всегда рады приветствовать в команде новые ценные кадры, которые вместе с нами будут открывать все новые
+        возможности в мире логистики.</p>
+    </div>
+  </section>
   <!-- PARTNERS -->
   <section class="partners" id="partners">
     <div class="partners__container">
       <h2 class="partners__container-title wow fadeInRight" data-wow-delay="0.3s">В нас поверили</h2>
       <p class="partners__container-text wow fadeInRight" data-wow-delay="0.3s">Благодаря доверию наших клиентов мы уже
-        достигли немалых успехов в сфере транспорта и логистики. Благодарим вас за выбор "MERJEN YOL". Вы вдохновляете
-        нас ставить перед собой и реализовывать все более амбициозные цели для вашей пользы.
-
+        достигли немалых успехов в сфере транспорта и логистики. <br /> Благодарим вас за выбор "MERJEN YOL".Вы
+        вдохновляете нас ставить перед собой и реализовывать все более амбициозные цели для вашей пользы.
       </p>
     </div>
     <div class="partners__container-img">
       <img class="partners__container-img1 wow fadeIn" data-wow-delay="0.3s" src="./img/asly_yag.jpg" alt="Asly Yag"
-        width="300px" height="300px">
+        width="265px" height="265px">
       <img class="partners__container-img2 wow fadeIn" data-wow-delay="0.3s" src="./img/arwana.jpg" alt="Arwana"
-        width="300px" height="300px">
+        width="265px" height="265px">
       <img class="partners__container-img3 wow fadeIn" data-wow-delay="0.3s" src="./img/prestige.jpg"
-        alt="Home Prestige" width="300px" height="300px">
+        alt="Home Prestige" width="265px" height="265px">
       <img class="partners__container-img4 wow fadeIn" data-wow-delay="0.3s" src="./img/levis.jpg" alt="Levis"
-        width="300px" height="300px">
+        width="265px" height="265px">
+      <img class="partners__container-img5 wow fadeIn" data-wow-delay="0.3s" src="./img/asly_yag.jpg" alt="Asly Yag"
+        width="265px" height="265px">
+      <img class="partners__container-img6 wow fadeIn" data-wow-delay="0.3s" src="./img/arwana.jpg" alt="Arwana"
+        width="265px" height="265px">
+      <img class="partners__container-img7 wow fadeIn" data-wow-delay="0.3s" src="./img/prestige.jpg"
+        alt="Home Prestige" width="265px" height="265px">
+      <img class="partners__container-img8 wow fadeIn" data-wow-delay="0.3s" src="./img/levis.jpg" alt="Levis"
+        width="265px" height="265px">
+      <img class="partners__container-img9 wow fadeIn" data-wow-delay="0.3s" src="./img/prestige.jpg"
+        alt="Home Prestige" width="265px" height="265px">
+      <img class="partners__container-img10 wow fadeIn" data-wow-delay="0.3s" src="./img/levis.jpg" alt="Levis"
+        width="265px" height="265px">
     </div>
   </section>
   <!-- THANKS -->
@@ -420,7 +415,9 @@
   <footer class="footer" id="footer">
     <div class="footer__1">
       <img src="./img/header_logo.svg" alt="Logo" class="footer__logo" width="189px" height="30px">
-      <a class="footer__1-text" href="https://goo.gl/maps/n6giEGL8uGbHTaKf8">Ашхабад, Отель “Олимпия”, 2 этаж</a>
+      <a class="footer__1-text" href="https://goo.gl/maps/n6giEGL8uGbHTaKf8">Отель “Олимпия”, 2 этаж, <br /> Ашхабад,
+        744000,
+        Туркменистан</a>
       <a class="footer__1-text" href="mailto: merjenyol@merjenyol.com">Email: merjenyol@merjenyol.com</a>
       <a class="footer__1-text" href="tel:+993 12 464114">Телефон: +993 12 464114</a>
       <p class="footer__1-last">©
@@ -471,12 +468,11 @@
 <script type="text/javascript" src="./js/script.js"></script>
 <script type="text/javascript" src="./js/wow.min.js"></script>
 <script type="text/javascript" src="./js/animation.js"></script>
-<script type="text/javascript" src="./js/modal_header.js"></script>
-<script type="text/javascript" src="./js/modal_about.js"></script>
-<script type="text/javascript" src="./js/modal_career.js"></script>
+<script type="text/javascript" src="./js/modals.js"></script>
 <script type="text/javascript" src="./js/hover.js"></script>
 <script type="text/javascript" src="./js/textChange.js"></script>
-<script type="text/javascript" src="./js/thanksTextChangeRu.js"></script>
-<script type="text/javascript" src="./js/thanksTitleChangeRu.js"></script>
+<script type="text/javascript" src="./js/thanksTextChange.js"></script>
+<script type="text/javascript" src="./js/thanksTitleChange.js"></script>
+<script type="text/javascript" src="./js/slider.js"></script>
 
 </html>

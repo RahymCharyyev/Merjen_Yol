@@ -7,14 +7,6 @@ $(document).ready(function () {
       jQuery("#header__arrow").removeClass("fix");
     }
   );
-  $("#scroll__link").hover(
-    function () {
-      jQuery("#scroll__arrow").addClass("fix");
-    },
-    function () {
-      jQuery("#scroll__arrow").removeClass("fix");
-    }
-  );
   $("#modal_about").hover(
     function () {
       jQuery("#about__arrow").addClass("fix");
@@ -23,12 +15,12 @@ $(document).ready(function () {
       jQuery("#about__arrow").removeClass("fix");
     }
   );
-  $("#modal_career").hover(
+  $("#modal_import").hover(
     function () {
-      jQuery("#career__arrow").addClass("fix");
+      jQuery("#import__arrow").addClass("fix");
     },
     function () {
-      jQuery("#career__arrow").removeClass("fix");
+      jQuery("#import__arrow").removeClass("fix");
     }
   );
 });
