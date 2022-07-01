@@ -1,5 +1,5 @@
 let images = new Array(
-  "./img/header_img1.jpg",
+  "./img/header_img2.jpg",
   "./img/header_img2.jpg",
   "./img/header_img3.jpg"
 );
