@@ -34,8 +34,6 @@
 #modal_header-text,
 #modal_about-text,
 #modal_import-text {
-  width: 48px;
-  height: 48px;
   margin: 15px;
   cursor: pointer;
   position: absolute;

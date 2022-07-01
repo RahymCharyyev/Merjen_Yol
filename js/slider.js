@@ -1,5 +1,4 @@
 let images = new Array(
-  // "./img/header_img2.jpg",
   "./img/header_img1.jpg",
   "./img/header_img2.jpg",
   "./img/header_img3.jpg"
@@ -31,5 +30,5 @@ function SliderTextRotator() {
 
 $(document).ready(function () {
   SliderTextRotator();
-  setInterval(SliderTextRotator, 4000);
+  setInterval(SliderTextRotator, 4200);
 });

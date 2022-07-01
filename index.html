@@ -7,7 +7,7 @@
   <meta name="theme-color" content="#F7F9F9" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="description"
-    content="MERJEN ÝOL – опытный участник рынка грузоперевозок в Туркменистане и за его пределами." />
+    content="MERJEN YOL – опытный участник рынка грузоперевозок в Туркменистане и за его пределами." />
   <meta name="robots" content="all" />
   <meta name="format-detection" content="phone=no" />
   <meta name="skype_toolbar" content="skype_toolbar_parser_compatible" />
@@ -42,15 +42,23 @@
   <link rel="stylesheet" href="./style/animate.min.css">
   <link rel="stylesheet" href="./style/media.css">
   <link rel="stylesheet" href="./style/burger.css">
-  <title>MERJEN ÝOL</title>
+  <title>MERJEN YOL</title>
 </head>
 
 <body>
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <div class="pre_wrapper">
+      <span class="icon_animate">
+        <small>Загрузка...</small>
+      </span>
+    </div>
+  </div>
   <!-- Modals -->
   <div id="modal_header-bg" class="modal_header-bg fadeInRight">
     <div id="modal_header-text"><img src="./img/modal_arrow.png" alt="Modal arrow"></div>
     <div class="modal_header">
-      <div><span><span>С 2013 года транспортно-логистическая компания «MERJEN ÝOL» – специалист в сфере мультимодальных
+      <div><span><span>С 2013 года транспортно-логистическая компания «MERJEN YOL» – специалист в сфере мультимодальных
             перевозок (железнодорожные, морские, автомобильные и авиаперевозки). Наша компания постоянно растет и
             развивается,
             диверсифицируя маршруты и направления деятельности. За это время мы улучшили качество транспортных услуг,
@@ -62,11 +70,11 @@
             компаний. Мы перевозим грузы любых размеров, объемов и форм «до двери» получателя или, по желанию клиента,
             на склад
             производства.
-            <br>Также важным направлением деятельности компании «MERJEN ÝOL» является импорт и экспорт для обеспечения
+            <br>Также важным направлением деятельности компании «MERJEN YOL» является импорт и экспорт для обеспечения
             компаний необходимыми для работы товарами и оборудованием на тендерной основе. Мы работаем с поставщиками из
             Туркменистана и зарубежья, чтобы представить лучшее предложение по приемлемой цене.
             <br>В партнерстве с австрийским логистическим гигантом Gerbrüder Weiss транспортно-логистическая компания
-            «MERJEN ÝOL» сформировала фундаментальные принципы работы – сопричастность делу каждого клиента и
+            «MERJEN YOL» сформировала фундаментальные принципы работы – сопричастность делу каждого клиента и
             европейское качество
             услуг.
           </span></span></div>
@@ -148,7 +156,8 @@
         </a>
       </div>
       <div class="header__title-container2 wow fadeInRight" data-wow-delay="1.2s">
-        <a class="header__vert-link header__vert-link1" href="#strengths">Уникальное предложение</a>
+        <a class="header__vert-link header__vert-link1" href="#strengths">Уникальное
+          предложение</a>
         <a class="header__vert-link header__vert-link2" href="#services">Транспорт и логистика</a>
         <a class="header__vert-link header__vert-link3" href="#import">Импорт и экспорт</a>
       </div>
@@ -471,8 +480,15 @@
 <script type="text/javascript" src="./js/modals.js"></script>
 <script type="text/javascript" src="./js/hover.js"></script>
 <script type="text/javascript" src="./js/textChange.js"></script>
-<script type="text/javascript" src="./js/thanksTextChange.js"></script>
 <script type="text/javascript" src="./js/thanksTitleChange.js"></script>
 <script type="text/javascript" src="./js/slider.js"></script>
+<script type="text/javascript">
+  $(window).on('load', function () {
+    var $preloader = $('#preloader'),
+      $icon_animate = $preloader.find('.icon_animate');
+    $icon_animate.fadeOut();
+    $preloader.delay(300).fadeOut('slow');
+  });
+</script>
 
 </html>
