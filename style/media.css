@@ -51,9 +51,9 @@
     grid-column: 2/4;
     width: 453px;
   }
-  .strengths__container {
+  /* .strengths__container {
     height: 835px;
-  }
+  } */
   .strengths__container-title1 {
     padding: 54px 0 0 175px;
   }
@@ -202,9 +202,9 @@
   .header__title-container2 {
     margin-top: 0;
   }
-  .strengths__container {
+  /* .strengths__container {
     height: 740px;
-  }
+  } */
   .strengths__container-title1 {
     padding: 54px 0 0 50px;
   }
@@ -303,9 +303,9 @@
     width: 278px;
     padding: 0 0 0 50px;
   }
-  .strengths__container {
+  /* .strengths__container {
     height: 1250px;
-  }
+  } */
   .strengths__container-title1 {
     padding: 68px 0 0 50px;
   }
@@ -509,8 +509,7 @@
     display: none;
   }
   .header__nav-logo {
-    padding: 0 0 0 110px;
-    margin-bottom: 10px;
+    margin: 0 10px 20px 0;
   }
   .header__title {
     padding: 170px 0 0 40px;
@@ -547,9 +546,9 @@
     width: 278px;
     padding: 0 0 25px 0;
   }
-  .strengths__container {
+  /* .strengths__container {
     height: 1100px;
-  }
+  } */
   .strengths__container-title1 {
     padding: 68px 0 0 50px;
   }
@@ -627,9 +626,6 @@
   .header {
     height: 768px;
   }
-  .header__nav-logo {
-    padding: 0 0 0 20px;
-  }
   .header__title {
     padding: 160px 0 0 50px;
   }
@@ -650,9 +646,9 @@
   .about {
     padding: 120px 0 109px 80px;
   }
-  .strengths__container {
+  /* .strengths__container {
     height: 1072px;
-  }
+  } */
   .strengths__container-title1 {
     padding: 68px 0 0 10px;
   }
@@ -792,16 +788,12 @@
   .header__title-text {
     width: 350px;
   }
-  .header__nav-logo {
-    margin-left: 50px;
-    padding: 0;
-  }
   .about {
     padding: 50px 0 50px 50px;
   }
-  .strengths__container {
+  /* .strengths__container {
     height: 1150px;
-  }
+  } */
   .strengths__container-title1 {
     width: 300px;
     padding: 68px 0 0 10px;
@@ -938,16 +930,15 @@
 }
 @media (max-width: 414px) {
   .header__nav-logo {
-    margin-left: 100px;
-    margin-bottom: 0;
+    margin: 0 10px 20px 0;
   }
 
   .about {
     padding: 50px 0 50px 20px;
   }
-  .strengths__container {
+  /* .strengths__container {
     height: 1420px;
-  }
+  } */
   .strengths__container-title1 {
     width: 300px;
     padding: 68px 0 0 10px;
@@ -960,11 +951,11 @@
   .strengths__container-title2 {
     width: 300px;
     padding: 0 0 0 10px;
-    margin-top: 600px;
+    margin-top: 0;
   }
   .strengths__container-text {
     width: 300px;
-    padding: 120px 0 0 10px;
+    padding: 0px 0 0 10px;
   }
   .strengths__container-img {
     padding-top: 500px;

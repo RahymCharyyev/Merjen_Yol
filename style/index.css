@@ -63,14 +63,24 @@ html {
   position: absolute;
   width: 370px;
   height: 340px;
-  background: url(../img/header__logo_coloured.svg) center center no-repeat;
+  background: url(../img/logo_loading.png) center center no-repeat;
   background-size: 340px;
   margin-left: auto;
   margin-right: auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  animation: load 1s linear infinite;
 }
+@keyframes load {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 /* HEADER */
 
 .header {
