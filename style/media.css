@@ -61,6 +61,7 @@
     padding: 161px 0 0 175px;
   }
   .strengths__container-img {
+    padding-top: 100px;
     width: 750px;
     height: 350px;
   }
@@ -76,7 +77,7 @@
   .strengths__container-text {
     width: 475px;
     height: 120px;
-    padding: 250px 350px 0 0;
+    padding: 100px 350px 0 0;
     justify-self: center;
   }
   .job {
@@ -214,12 +215,13 @@
   .strengths__container-img {
     width: 550px;
     height: 250px;
+    padding-top: 200px;
   }
   .strengths__container-title2 {
     padding: 0 650px 0 0;
   }
   .strengths__container-text {
-    padding: 380px 750px 0 0;
+    padding: 180px 750px 0 0;
   }
   .import {
     padding: 170px 0 0 125px;
@@ -315,23 +317,24 @@
   }
   .strengths__container-img {
     grid-row: 2/2;
-    padding-top: 400px;
+    margin-top: 270px;
+    padding: 0;
     width: 650px;
     height: 300px;
   }
   .strengths__container-title2 {
     grid-column: 1/3;
-    grid-row: 2/2;
+    grid-row: 1/2;
     padding: 0 0 0 50px;
     justify-self: start;
-    align-self: start;
+    align-self: end;
   }
   .strengths__container-text {
     grid-column: 1/3;
     grid-row: 2/2;
     width: 475px;
     height: 120px;
-    padding: 150px 0 0 50px;
+    padding: 0 0 0 50px;
     align-self: start;
     justify-self: start;
   }
@@ -555,15 +558,19 @@
   .strengths__container ul {
     height: 254px;
     padding: 160px 0 50px 50px;
-    white-space: normal;
   }
-  .strengths__container li {
-    white-space: normal;
+  .strengths__container-img {
+    grid-row: 2/2;
+    margin-top: 270px;
+    padding: 0;
+    width: 650px;
+    height: 300px;
   }
   .strengths__container-title2 {
     grid-column: 1/3;
     grid-row: 1/2;
     padding: 0 0 0 50px;
+    justify-self: start;
     align-self: end;
   }
   .strengths__container-text {
@@ -571,12 +578,9 @@
     grid-row: 2/2;
     width: 475px;
     height: 120px;
-    padding: 50px 0 0 50px;
+    padding: 0 0 0 50px;
     align-self: start;
     justify-self: start;
-  }
-  .strengths__container-img {
-    padding-top: 252px;
   }
   .export {
     display: flex;
@@ -646,26 +650,36 @@
   .about {
     padding: 120px 0 109px 80px;
   }
-  /* .strengths__container {
-    height: 1072px;
-  } */
+  .strengths__container {
+    height: 1098px;
+  }
   .strengths__container-title1 {
     padding: 68px 0 0 10px;
   }
   .strengths__container ul {
-    padding: 160px 0 50px 10px;
+    padding: 160px 0 100px 10px;
+  }
+  #link1:hover,
+  #link2:hover,
+  #link3:hover,
+  #link4:hover,
+  #link5:hover,
+  #link6:hover {
+    font-size: 16px;
   }
   .strengths__container-title2 {
     width: 500px;
     padding: 0 0 0 10px;
   }
   .strengths__container-text {
+    width: 400px;
     padding: 15px 0 0 10px;
   }
   .strengths__container-img {
     width: 470px;
     height: 250px;
-    padding-top: 285px;
+    padding-top: 0;
+    margin-top: 300px;
   }
   .job {
     column-gap: 10px;
@@ -773,6 +787,10 @@
   .header__title-text {
     width: 350px;
   }
+  .strengths__container ul {
+    width: 400px;
+    margin: 0 0 50px 0;
+  }
   .import__text {
     width: 350px;
   }
@@ -791,31 +809,25 @@
   .about {
     padding: 50px 0 50px 50px;
   }
-  /* .strengths__container {
-    height: 1150px;
-  } */
-  .strengths__container-title1 {
-    width: 300px;
-    padding: 68px 0 0 10px;
+  .strengths__container {
+    display: flex;
+    flex-direction: column;
   }
   .strengths__container ul {
-    width: 350px;
-    padding: 160px 0 50px 10px;
+    margin: 20px 0 0 0;
+    padding: 0;
   }
   .strengths__container-title2 {
-    width: 320px;
-    padding: 0 0 0 10px;
-    margin-top: 500px;
-    line-height: 55px;
+    align-self: center;
+    justify-self: center;
+    padding-left: 100px;
   }
   .strengths__container-text {
-    width: 360px;
-    padding: 50px 0 0 10px;
+    margin: 25px 0 0 10px;
+    padding: 0;
   }
   .strengths__container-img {
-    width: 360px;
-    height: 200px;
-    padding-top: 330px;
+    margin: 200px 0 0 0;
   }
   .job {
     height: 800px;
@@ -932,33 +944,26 @@
   .header__nav-logo {
     margin: 0 10px 20px 0;
   }
-
   .about {
     padding: 50px 0 50px 20px;
   }
-  /* .strengths__container {
-    height: 1420px;
-  } */
-  .strengths__container-title1 {
-    width: 300px;
-    padding: 68px 0 0 10px;
-  }
   .strengths__container ul {
-    width: 300px;
-    padding: 160px 0 50px 10px;
-    white-space: normal;
+    width: 350px;
+    margin: 20px 0 0 0;
+    padding: 0;
   }
   .strengths__container-title2 {
-    width: 300px;
-    padding: 0 0 0 10px;
-    margin-top: 0;
+    align-self: center;
+    justify-self: center;
+    padding: 50px 0 0 100px;
   }
   .strengths__container-text {
-    width: 300px;
-    padding: 0px 0 0 10px;
+    width: 350px;
+    margin: 25px 0 0 10px;
+    padding: 0;
   }
   .strengths__container-img {
-    padding-top: 500px;
+    margin: 200px 0 0 0;
   }
   .job__img1 {
     padding-left: 0px;
@@ -1002,6 +1007,28 @@
   }
   .header__title-text {
     width: 300px;
+  }
+  .strengths {
+    height: 1200px;
+  }
+  .strengths__container ul {
+    width: 350px;
+    margin: 50px 0 0 0;
+    padding: 0;
+  }
+  .strengths__container-title2 {
+    width: 350px;
+    align-self: center;
+    justify-self: center;
+    padding: 50px 0 0 50px;
+  }
+  .strengths__container-text {
+    width: 350px;
+    margin: 100px 0 0 10px;
+    padding: 0;
+  }
+  .strengths__container-img {
+    margin: 200px 0 0 0;
   }
   .export__img1 img,
   .export__img2 img,

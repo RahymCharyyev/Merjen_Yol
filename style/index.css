@@ -755,12 +755,22 @@ html {
   margin-top: 125px;
 }
 
-.partners__container-img img {
+#grayImg {
   filter: grayscale(100%);
+  transition: 2s;
 }
 
-.partners__container-img img:hover {
+#grayImg:hover {
   filter: grayscale(0%);
+  transition: 2s;
+}
+.partners__container-img10 {
+  background-image: url(../img/home1.jpg);
+  transition: 2s;
+}
+.partners__container-img10:hover {
+  background-image: url(../img/home.jpg);
+  transition: 2s;
 }
 
 /* THANKS */
