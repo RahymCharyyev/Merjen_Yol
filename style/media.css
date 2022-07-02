@@ -697,13 +697,13 @@
     justify-self: start;
   }
   .job__text {
-    grid-row: 1/2;
-    align-self: end;
+    grid-row: 2/3;
+    align-self: start;
     padding: 10px 0 0 20px;
   }
   .job__title {
     width: 500px;
-    padding: 20px 0 0 20px;
+    padding: 90px 0 0 20px;
     align-self: start;
   }
   .transportation,
@@ -787,7 +787,7 @@
   }
   .transportation__first,
   .transportation__third {
-    width: 400px;
+    width: 300px;
   }
 }
 @media (max-width: 465px) {
@@ -800,10 +800,6 @@
   }
   .import__text {
     width: 350px;
-  }
-  .transportation__first,
-  .transportation__third {
-    width: 380px;
   }
 }
 @media (max-width: 420px) {
@@ -982,10 +978,6 @@
   .job__img2 {
     margin-left: 180px;
   }
-  .transportation__first,
-  .transportation__third {
-    width: 350px;
-  }
   .transportation__first-title,
   .transportation__second-title,
   .transportation__third-title,
@@ -1044,10 +1036,6 @@
   }
   .strengths__container-img {
     margin: 200px 0 0 0;
-  }
-  .transportation__first,
-  .transportation__third {
-    width: 300px;
   }
   .export__img1 img,
   .export__img2 img,
