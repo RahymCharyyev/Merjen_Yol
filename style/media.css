@@ -19,9 +19,6 @@
     width: 187px;
     padding: 0 0 0 50px;
   }
-  .header__nav-dropdown {
-    padding: 0 50px 0 0;
-  }
   .header__title {
     padding: 226px 0 0 264px;
   }
@@ -135,27 +132,6 @@
   .transportation__fourth-title {
     gap: 15px;
   }
-  .career {
-    height: 700px;
-    margin-top: 290px;
-  }
-  .career__title {
-    padding: 252px 0 0 278px;
-  }
-  .career__text {
-    width: 362px;
-    padding: 18px 0 0 278px;
-  }
-  .career__link {
-    padding: 18px 0 0 278px;
-  }
-  .career__link a {
-    column-gap: 15px;
-  }
-  .career__link-arrow {
-    width: 25px;
-    height: 2px;
-  }
   .import {
     padding: 170px 0 0 225px;
   }
@@ -165,18 +141,12 @@
   .partners {
     padding: 319px 0 253px 100px;
   }
-  .partners__container-img {
-    padding-left: 134px;
-  }
   .thanks {
     height: 650px;
   }
   .thanks__title {
     width: 500px;
     padding-bottom: 37px;
-  }
-  .thanks__text {
-    padding: 0 220px 37px 0;
   }
   .footer {
     height: 417px;
@@ -199,14 +169,14 @@
     padding-right: 107px;
   }
   .footer_small {
-    padding-top: 50px;
+    margin-top: 50px;
   }
   .footer__1-last {
-    padding-top: 135px;
+    padding-top: 75px;
   }
   .footer__3-socials {
     column-gap: 18px;
-    padding-top: 210px;
+    padding-top: 190px;
   }
 
   .footer__logo {
@@ -220,6 +190,15 @@
     display: flex;
     flex-direction: column;
     white-space: nowrap;
+  }
+}
+@media (max-width: 1435px) {
+  .partners__container-img {
+    grid-template-columns: repeat(5, 200px);
+  }
+  .partners__container-img img {
+    width: 200px;
+    height: 200px;
   }
 }
 @media (max-width: 1350px) {
@@ -266,21 +245,6 @@
     margin-left: 250px;
   }
 }
-@media (max-width: 1200px) {
-  .partners {
-    padding: 200px 0 250px 50px;
-  }
-  .partners__container-img {
-    padding-left: 5px;
-  }
-  .partners__container-img1,
-  .partners__container-img2,
-  .partners__container-img3,
-  .partners__container-img4 {
-    width: 250px;
-    height: 250px;
-  }
-}
 /* TABLET */
 @media (max-width: 1100px) {
   :root {
@@ -324,6 +288,12 @@
   .header__title-container2 a {
     padding-bottom: 80px;
     column-gap: 16px;
+  }
+  #header__nav-link4 {
+    justify-self: end;
+    margin-right: 80px;
+    border: 2px solid var(--white);
+    padding: 5px 0px;
   }
   .about {
     padding: 120px 0 109px 50px;
@@ -417,17 +387,15 @@
   .transportation__fourth-title {
     gap: 45px;
   }
-  .career {
-    margin-top: 250px;
-  }
   .career__title {
-    padding: 252px 0 0 132px;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    align-self: end;
+    justify-self: center;
+    padding-bottom: 50px;
   }
   .career__text {
-    padding: 18px 0 0 132px;
-  }
-  .career__link {
-    padding: 18px 0 0 132px;
+    grid-column: 2/3;
   }
   .export {
     margin: 264px 0 0 0;
@@ -457,20 +425,16 @@
     column-gap: 50px;
   }
   .partners {
-    flex-direction: column;
-    padding: 187px 0 260px 100px;
+    padding-left: 2px;
   }
   .partners__container-img {
-    width: 520px;
-    height: 520px;
-    padding: 108px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
-  .partners__container-img1,
-  .partners__container-img2,
-  .partners__container-img3,
-  .partners__container-img4 {
-    width: 260px;
-    height: 260px;
+  .partners__container-img img {
+    width: 150px;
+    height: 150px;
   }
   .thanks {
     height: 640px;
@@ -498,7 +462,7 @@
   .footer__1-last {
     grid-column: 1/2;
     width: 250px;
-    padding: 240px 0 0 0;
+    padding: 190px 0 0 0;
     white-space: normal;
   }
   .footer__2 {
@@ -527,14 +491,14 @@
   }
 
   .footer_small {
-    padding-top: 50px;
+    margin-top: 50px;
   }
 
   .footer__3-socials {
     grid-column: 3/4;
     grid-row: 3/4;
     column-gap: 18px;
-    padding-top: 50px;
+    padding-top: 30px;
   }
 }
 @media (max-width: 750px) {
@@ -554,9 +518,7 @@
   }
   .header__nav-logo {
     padding: 0 0 0 110px;
-  }
-  .header__nav-dropdown {
-    display: none;
+    margin-bottom: 10px;
   }
   .header__title {
     padding: 170px 0 0 40px;
@@ -647,7 +609,7 @@
   .footer__1-last {
     width: 180px;
     word-break: break-all;
-    padding: 230px 0 0 0;
+    padding: 180px 0 0 0;
   }
   .footer__1-text {
     padding-top: 50px;
@@ -658,7 +620,7 @@
     padding-left: 70px;
   }
   .footer_small {
-    padding-top: 50px;
+    margin-top: 50px;
   }
   .footer__3-socials {
     column-gap: 10px;
@@ -751,18 +713,6 @@
   .transportation__fourth-title {
     gap: 25px;
   }
-  .career {
-    margin-top: 150px;
-  }
-  .career__title {
-    padding: 252px 0 0 65px;
-  }
-  .career__text {
-    padding: 18px 0 0 65px;
-  }
-  .career__link {
-    padding: 18px 0 0 65px;
-  }
   .import__text {
     width: 450px;
   }
@@ -771,24 +721,8 @@
     row-gap: 50px;
     align-self: left;
   }
-  .partners {
-    flex-direction: column;
-    padding: 120px 0 160px 20px;
-  }
-  .partners__container-img {
-    width: 320px;
-    height: 320px;
-    padding: 50px 0 0 0;
-  }
   .partners__container-text {
     width: 400px;
-  }
-  .partners__container-img1,
-  .partners__container-img2,
-  .partners__container-img3,
-  .partners__container-img4 {
-    width: 200px;
-    height: 200px;
   }
   .thanks {
     height: 640px;
@@ -796,10 +730,6 @@
   .thanks__title {
     width: 400px;
     padding-bottom: 43px;
-  }
-  .thanks__text {
-    width: 400px;
-    padding: 0 0 40px 0;
   }
   .thanks__slider {
     margin-right: 70px;
@@ -810,7 +740,7 @@
   .footer__1-last {
     width: 180px;
     word-break: break-all;
-    padding: 230px 0 0 0;
+    padding: 180px 0 0 0;
   }
   .footer__1-text {
     padding-top: 50px;
@@ -821,7 +751,7 @@
     padding-left: 40px;
   }
   .footer_small {
-    padding-top: 50px;
+    margin-top: 50px;
   }
   .footer__3-socials {
     column-gap: 10px;
@@ -835,6 +765,13 @@
 @media (max-width: 530px) {
   .header__title-container2 a {
     padding-right: 250px;
+  }
+  .career__title {
+    justify-self: start;
+    padding-bottom: 20px;
+  }
+  .career__text {
+    width: 400px;
   }
 }
 @media (max-width: 465px) {
@@ -911,36 +848,9 @@
     padding: 40px 0 0 10px;
     align-self: center;
   }
-  .career {
-    margin-top: 150px;
-  }
-  .career__title {
-    padding: 250px 0 0 50px;
-  }
-  .career__text {
-    width: 320px;
-    padding: 18px 0 0 50px;
-  }
-  .career__link {
-    padding: 18px 0 0 50px;
-  }
-  .partners {
-    padding: 120px 0 160px 50px;
-  }
-  .partners__container-img {
-    width: 320px;
-    height: 320px;
-    padding: 50px 0 0 0;
-  }
+
   .partners__container-text {
     width: 320px;
-  }
-  .partners__container-img1,
-  .partners__container-img2,
-  .partners__container-img3,
-  .partners__container-img4 {
-    width: 160px;
-    height: 160px;
   }
   .thanks {
     height: 640px;
@@ -992,7 +902,7 @@
     padding-top: 50px;
   }
   .footer_small {
-    padding-top: 50px;
+    margin-top: 50px;
   }
   .footer__3-socials {
     display: none;
@@ -1012,6 +922,13 @@
     display: flex;
     flex-direction: row;
     column-gap: 20px;
+  }
+  .RC {
+    display: none;
+  }
+  .RC__mobile {
+    display: flex;
+    align-self: center;
   }
 }
 @media (max-width: 414px) {
@@ -1068,9 +985,6 @@
   .job__img2 {
     margin-left: 180px;
   }
-  .career {
-    margin-top: 150px;
-  }
   .transportation__first-title,
   .transportation__second-title,
   .transportation__third-title,
@@ -1080,33 +994,11 @@
   .transportation__third-title {
     width: 250px;
   }
-  .career__title {
-    padding: 250px 0 0 20px;
-  }
   .career__text {
-    width: 320px;
-    padding: 18px 0 0 20px;
-  }
-  .career__link {
-    padding: 18px 0 0 20px;
-  }
-  .partners {
-    padding: 120px 0 160px 10px;
-  }
-  .partners__container-img {
-    width: 280px;
-    height: 280px;
-    padding: 50px 0 0 0;
+    width: 300px;
   }
   .partners__container-text {
     width: 300px;
-  }
-  .partners__container-img1,
-  .partners__container-img2,
-  .partners__container-img3,
-  .partners__container-img4 {
-    width: 140px;
-    height: 140px;
   }
 }
 @media (max-width: 365px) {

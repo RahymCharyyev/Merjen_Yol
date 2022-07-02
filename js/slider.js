@@ -30,5 +30,5 @@ function SliderTextRotator() {
 
 $(document).ready(function () {
   SliderTextRotator();
-  setInterval(SliderTextRotator, 4200);
+  setInterval(SliderTextRotator, 4500);
 });

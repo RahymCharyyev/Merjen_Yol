@@ -65,19 +65,17 @@ html {
   height: 340px;
   background: url(../img/header__logo_coloured.svg) center center no-repeat;
   background-size: 340px;
-  /* centering begin */
   margin-left: auto;
   margin-right: auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* centering end */
 }
 /* HEADER */
 
 .header {
   background-image: url(../img/header_img1.jpg);
-  background-position: center center;
+  background-position: left left;
   background-repeat: no-repeat;
   background-size: cover;
   height: 1000px;
@@ -417,7 +415,7 @@ html {
   color: var(--white);
   padding: 0 0 100px 140px;
   align-self: center;
-  animation: fadeInDown;
+  animation: fadeInRight;
   animation-duration: 2s;
 }
 
@@ -432,7 +430,7 @@ html {
   color: rgba(255, 255, 255, 0.8);
   padding: 200px 0 0 140px;
   align-self: center;
-  animation: fadeInDown;
+  animation: fadeInRight;
   animation-duration: 2s;
 }
 
@@ -769,36 +767,26 @@ html {
 }
 
 .thanks__title {
-  width: 518px;
+  width: 540px;
   font-weight: var(--semi-bold);
-  font-size: var(--text);
+  font-size: var(--link);
   line-height: 35px;
   letter-spacing: -0.02em;
   color: var(--white);
-  padding-bottom: 40px;
-}
-
-.thanks__text {
-  font-weight: var(--semi-bold);
-  font-size: var(--text);
-  line-height: 25px;
-  letter-spacing: -0.01em;
-  color: var(--white);
-  padding: 0 170px 40px 0;
 }
 
 .thanks__slider {
   height: 6px;
-  width: 320px;
+  width: 440px;
   background: var(--white);
-  margin-right: 170px;
+  margin: 50px 100px 0 0;
 }
 
 .thanks__slider .thanks__slider-progress {
   height: 100%;
   width: 100px;
   background: var(--primary_blue);
-  animation: move 21s ease-in-out infinite;
+  animation: move 36s ease-in-out infinite;
 }
 
 @keyframes move {
@@ -869,7 +857,7 @@ html {
   font-weight: var(--medium);
   font-size: var(--text);
   color: var(--white);
-  padding-top: 50px;
+  margin-top: 50px;
   text-decoration: none;
   transition: 0.2s;
 }
@@ -885,7 +873,7 @@ html {
   font-weight: var(--medium);
   font-size: var(--text);
   color: rgba(255, 255, 255, 0.8);
-  padding-top: 190px;
+  padding-top: 160px;
 }
 
 .footer__3-socials {
@@ -909,4 +897,21 @@ html {
 .footer__mobile,
 .footer__mobile-socials {
   display: none;
+}
+
+.RC {
+  font-weight: var(--medium);
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+  padding-top: 20px;
+  text-decoration: none;
+}
+
+.RC__mobile {
+  display: none;
+  font-weight: var(--medium);
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+  padding-top: 20px;
+  text-decoration: none;
 }
