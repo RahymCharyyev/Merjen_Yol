@@ -9,9 +9,6 @@
     --link: 1.125em;
     --text: 1em;
   }
-  .header {
-    min-height: 730px;
-  }
   .header__nav {
     padding-top: 35px;
   }
@@ -37,13 +34,7 @@
   }
   .header__title-container2 {
     padding-right: 50px;
-  }
-  .header__title-container2 a {
-    padding-bottom: 80px;
-    column-gap: 16px;
-  }
-  .header__title-container2-arrow {
-    width: 25px;
+    margin-top: 150px;
   }
   .about {
     padding-left: 290px;
@@ -202,6 +193,15 @@
   }
 }
 @media (max-width: 1350px) {
+  .header {
+    height: 730px;
+  }
+  .header__title {
+    padding-left: 50px;
+  }
+  .header__title-container2 {
+    margin-top: 0;
+  }
   .strengths__container {
     height: 740px;
   }
@@ -255,11 +255,6 @@
     --link: 1.125em;
     --text: 1em;
   }
-  .header {
-    min-height: 875px;
-    min-width: 768px;
-    background-position: left center;
-  }
   .header__nav {
     height: 0;
     padding-top: 33px;
@@ -271,11 +266,8 @@
   .header__nav-logo {
     padding: 0 0 0 100px;
   }
-  .header__nav-dropdown {
-    padding: 0 50px 0 0;
-  }
   .header__title {
-    padding: 198px 0 0 116px;
+    padding: 198px 0 0 50px;
     margin: 0;
   }
   .header__title-text {
@@ -511,7 +503,7 @@
     --text: 0.875em;
   }
   .header {
-    min-height: 650px;
+    height: 875px;
   }
   .header__nav-link {
     display: none;
@@ -529,10 +521,12 @@
   .header__title-text {
     margin: 25px 0 0 0;
   }
+  .header__title-container2 {
+    padding: 150px 0 0 0;
+  }
   .header__title-container2 a {
     padding-bottom: 0px;
-    padding-right: 80px;
-    column-gap: 16px;
+    padding-right: 10px;
   }
   .about {
     display: flex;
@@ -603,6 +597,9 @@
     height: 450px;
     column-gap: 50px;
   }
+  .thanks__slider {
+    margin-right: 60px;
+  }
   .footer__1 {
     padding: 0 0 0 100px;
   }
@@ -628,23 +625,27 @@
 }
 @media (max-width: 630px) {
   .header {
-    min-height: 850px;
+    height: 768px;
   }
   .header__nav-logo {
     padding: 0 0 0 20px;
   }
   .header__title {
-    padding: 160px 0 0 20px;
+    padding: 160px 0 0 50px;
   }
   .header__title-h1 {
-    margin: 0 350px 0 0;
+    margin: 0 30px 0 0;
     line-height: 45px;
   }
   .header__title-text {
     width: 400px;
   }
+  .header__title-container2 {
+    padding: 0;
+  }
   .header__title-container2 a {
-    padding-right: 180px;
+    padding-bottom: 0px;
+    padding-right: 10px;
   }
   .about {
     padding: 120px 0 109px 80px;
@@ -732,7 +733,8 @@
     padding-bottom: 43px;
   }
   .thanks__slider {
-    margin-right: 70px;
+    width: 400px;
+    margin-right: 10px;
   }
   .footer__1 {
     padding: 0 0 0 20px;
@@ -763,9 +765,6 @@
 }
 /* PHONE */
 @media (max-width: 530px) {
-  .header__title-container2 a {
-    padding-right: 250px;
-  }
   .career__title {
     justify-self: start;
     padding-bottom: 20px;
@@ -775,21 +774,27 @@
   }
 }
 @media (max-width: 465px) {
-  .header__title-container2 a {
-    padding-right: 300px;
+  .header__title-text {
+    width: 350px;
   }
   .import__text {
     width: 350px;
   }
 }
 @media (max-width: 420px) {
+  .header__title {
+    padding: 160px 0 0 0;
+    margin: 0 0 0 20px;
+  }
+  .header__title-h1 {
+    width: 350px;
+  }
+  .header__title-text {
+    width: 350px;
+  }
   .header__nav-logo {
     margin-left: 50px;
     padding: 0;
-  }
-  .header__title-container2 a {
-    padding-right: 0px;
-    margin-right: 300px;
   }
   .about {
     padding: 50px 0 50px 50px;
@@ -932,28 +937,13 @@
   }
 }
 @media (max-width: 414px) {
-  .header {
-    min-height: 900px;
-    background-position: left center;
-  }
   .header__nav-logo {
     margin-left: 100px;
+    margin-bottom: 0;
   }
-  .header__title {
-    padding-left: 5px;
-  }
-  .header__title-h1 {
-    margin: 0 400px 0 0;
-  }
-  .header__title-text {
-    width: 300px;
-  }
-  .header__title-container2 a {
-    padding-right: 0px;
-    margin-right: 350px;
-  }
+
   .about {
-    padding: 50px 0 50px 10px;
+    padding: 50px 0 50px 20px;
   }
   .strengths__container {
     height: 1420px;
@@ -997,13 +987,30 @@
   .career__text {
     width: 300px;
   }
+  .partners {
+    padding-left: 20px;
+  }
   .partners__container-text {
     width: 300px;
   }
+  .thanks__title {
+    padding: 0;
+  }
+  .thanks__slider {
+    width: 250px;
+    margin: auto;
+  }
 }
-@media (max-width: 365px) {
-  .header__title-container2 a {
-    margin-right: 400px;
+@media (max-width: 369px) {
+  .header__title {
+    padding: 160px 0 0 0;
+    margin: 0 0 0 20px;
+  }
+  .header__title-h1 {
+    width: 300px;
+  }
+  .header__title-text {
+    width: 300px;
   }
   .export__img1 img,
   .export__img2 img,
