@@ -428,9 +428,10 @@
     flex-wrap: wrap;
   }
   .partners__container-img img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
   }
+
   .thanks {
     height: 640px;
   }
@@ -712,8 +713,10 @@
   }
   .transportation__first,
   .transportation__third {
+    width: 480px;
     padding-left: 20px;
   }
+
   .transportation__second,
   .transportation__fourth {
     padding: 50px 0 0 20px;
@@ -782,6 +785,10 @@
   .career__text {
     width: 400px;
   }
+  .transportation__first,
+  .transportation__third {
+    width: 400px;
+  }
 }
 @media (max-width: 465px) {
   .header__title-text {
@@ -793,6 +800,10 @@
   }
   .import__text {
     width: 350px;
+  }
+  .transportation__first,
+  .transportation__third {
+    width: 380px;
   }
 }
 @media (max-width: 420px) {
@@ -971,6 +982,10 @@
   .job__img2 {
     margin-left: 180px;
   }
+  .transportation__first,
+  .transportation__third {
+    width: 350px;
+  }
   .transportation__first-title,
   .transportation__second-title,
   .transportation__third-title,
@@ -990,7 +1005,7 @@
     width: 300px;
   }
   .thanks__title {
-    padding: 0;
+    padding: 50px 0 0 0;
   }
   .thanks__slider {
     width: 250px;
@@ -1029,6 +1044,10 @@
   }
   .strengths__container-img {
     margin: 200px 0 0 0;
+  }
+  .transportation__first,
+  .transportation__third {
+    width: 300px;
   }
   .export__img1 img,
   .export__img2 img,

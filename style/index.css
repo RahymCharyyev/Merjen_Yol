@@ -511,6 +511,7 @@ html {
 .transportation__first,
 .transportation__third {
   padding-left: 391px;
+  width: 550px;
 }
 
 .transportation__second {
@@ -766,6 +767,7 @@ html {
 }
 .partners__container-img10 {
   background-image: url(../img/home1.jpg);
+  background-position: center center;
   transition: 2s;
 }
 .partners__container-img10:hover {
@@ -794,6 +796,7 @@ html {
   line-height: 35px;
   letter-spacing: -0.02em;
   color: var(--white);
+  text-align: justify;
 }
 
 .thanks__slider {
