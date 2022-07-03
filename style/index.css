@@ -86,37 +86,39 @@ html {
 .header {
   width: 100%;
   height: 1000px;
-  transition: 0.01s;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   animation: slider 16s infinite;
 }
 
 @keyframes slider {
   from {
-    background-image: url("../img/1.jpg");
+    background-image: url("../img/header_img1.jpg");
   }
 
   37% {
-    background-image: url("../img/1.jpg");
+    background-image: url("../img/header_img1.jpg");
   }
 
   40% {
-    background-image: url("../img/2.jpg");
+    background-image: url("../img/header_img2.jpg");
   }
 
   67% {
-    background-image: url("../img/2.jpg");
+    background-image: url("../img/header_img2.jpg");
   }
 
   70% {
-    background-image: url("../img/3.jpg");
+    background-image: url("../img/header_img3.jpg");
   }
 
   97% {
-    background-image: url("../img/3.jpg");
+    background-image: url("../img/header_img3.jpg");
   }
 
   to {
-    background-image: url("../img/1.jpg");
+    background-image: url("../img/header_img1.jpg");
   }
 }
 
