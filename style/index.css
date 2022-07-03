@@ -295,9 +295,57 @@ html {
 .header__vert-link3 {
   align-self: end;
 }
+#change_links:before {
+  content: "Уникальное предложение";
+  animation-name: head;
+  animation-duration: 16s;
+  animation-iteration-count: infinite;
+}
 
+@keyframes head {
+  from {
+    content: "Уникальное предложение";
+  }
+  37% {
+    content: "Уникальное предложение";
+  }
+  40% {
+    content: "Транспорт и логистика";
+  }
+  67% {
+    content: "Транспорт и логистика";
+  }
+  70% {
+    content: "Импорт и экспорт";
+  }
+  97% {
+    content: "Импорт и экспорт";
+  }
+  to {
+    content: "Уникальное предложение";
+  }
+}
 .header__vert-link:hover {
   color: var(--link_hover);
+}
+
+.header__vert-link1 {
+  animation: hide 1s infinite;
+}
+
+@keyframes hide {
+  from {
+    display: block;
+  }
+  to {
+    display: none;
+  }
+}
+.header__vert-link2 {
+  visibility: hidden;
+}
+.header__vert-link3 {
+  visibility: hidden;
 }
 
 /* ABOUT US */
@@ -782,23 +830,23 @@ html {
 
 #grayImg {
   filter: grayscale(100%);
-  transition: 2s;
+  transition: 1s;
 }
 
 #grayImg:hover {
   filter: grayscale(0%);
-  transition: 2s;
-}
-.partners__container-img10 {
-  background-image: url(../img/home1.jpg);
-  background-position: center center;
-  transition: 2s;
-}
-.partners__container-img10:hover {
-  background-image: url(../img/home.jpg);
-  transition: 2s;
+  transition: 1s;
 }
 
+#grayImg1 {
+  filter: invert(0%);
+  transition: 1s;
+}
+
+#grayImg1:hover {
+  filter: invert(100%);
+  transition: 1s;
+}
 /* THANKS */
 
 .thanks {

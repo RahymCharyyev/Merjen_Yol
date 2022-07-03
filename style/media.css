@@ -1020,10 +1020,25 @@
     width: 300px;
   }
   .partners {
-    padding-left: 20px;
+    padding-left: 0;
+  }
+  .partners__container {
+    padding-left: 10px;
   }
   .partners__container-text {
     width: 300px;
+  }
+  .partners__container-img {
+    width: 400px;
+    padding: 0;
+  }
+  .partners__container-img img {
+    width: 150px;
+    height: 150px;
+  }
+  .partners__container-img10 {
+    width: 150px;
+    height: 150px;
   }
   .thanks__title {
     padding: 50px 0 0 0;
