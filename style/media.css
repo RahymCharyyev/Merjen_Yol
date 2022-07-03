@@ -955,18 +955,21 @@
     padding: 50px 0 50px 20px;
   }
   .strengths__container ul {
-    width: 350px;
+    width: 380px;
     margin: 50px 0 50px 0;
-    padding: 0;
+    padding: 0 0 0 20px;
   }
   .strengths__container-title2 {
-    align-self: center;
+    width: 350px;
+    align-self: start;
     justify-self: center;
-    padding: 0 0 0 120px;
+    padding: 0 0 0 20px;
+    margin-top: 20px;
+    line-height: 40px;
   }
   .strengths__container-text {
     width: 350px;
-    margin: 25px 0 0 10px;
+    margin: 25px 0 0 20px;
     padding: 0;
   }
   .strengths__container-img {
