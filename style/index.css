@@ -96,27 +96,21 @@ html {
   from {
     background-image: url("../img/header_img1.jpg");
   }
-
   37% {
     background-image: url("../img/header_img1.jpg");
   }
-
   40% {
     background-image: url("../img/header_img2.jpg");
   }
-
   67% {
     background-image: url("../img/header_img2.jpg");
   }
-
   70% {
     background-image: url("../img/header_img3.jpg");
   }
-
   97% {
     background-image: url("../img/header_img3.jpg");
   }
-
   to {
     background-image: url("../img/header_img1.jpg");
   }
@@ -285,9 +279,6 @@ html {
 }
 
 .header__vert-link {
-  display: flex;
-  flex-direction: row;
-  column-gap: 30px;
   cursor: pointer;
   color: var(--white);
   font-size: var(--text);
@@ -295,10 +286,14 @@ html {
   text-decoration: none;
   writing-mode: vertical-lr;
   transform: rotate(360deg);
-  align-self: end;
-  align-items: center;
   animation: fadeIn;
   animation-duration: 2s;
+}
+
+.header__vert-link1,
+.header__vert-link2,
+.header__vert-link3 {
+  align-self: end;
 }
 
 .header__vert-link:hover {
