@@ -958,7 +958,7 @@
     padding: 50px 0 50px 20px;
   }
   .strengths__container {
-    height: 1195px;
+    height: 1200px;
   }
   .strengths__container ul {
     width: 380px;
@@ -986,7 +986,7 @@
     grid-template-rows: 40% 60%;
   }
   .job__img1 {
-    padding: 0;
+    padding: 0 0 0 10px;
     margin: 0;
   }
   .job__img2 {
@@ -996,14 +996,14 @@
     justify-self: start;
   }
   .job__text {
-    padding: 0;
+    padding: 0 0 0 10px;
     margin: 0;
     grid-row: 1/2;
     align-self: end;
   }
   .job__title {
     grid-row: 2/3;
-    padding: 0;
+    padding: 0 0 0 10px;
     margin: 0;
     align-self: start;
   }
