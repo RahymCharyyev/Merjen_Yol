@@ -278,31 +278,24 @@ html {
   margin-top: 80px;
 }
 
-.header__vert-link {
-  cursor: pointer;
+.change__text {
   color: var(--white);
   font-size: var(--text);
   font-weight: var(--semi-bold);
   text-decoration: none;
   writing-mode: vertical-lr;
   transform: rotate(360deg);
-  animation: fadeIn;
-  animation-duration: 2s;
-}
-
-.header__vert-link1,
-.header__vert-link2,
-.header__vert-link3 {
   align-self: end;
 }
-#change_links:before {
+
+.change__text:before {
   content: "Уникальное предложение";
-  animation-name: head;
+  animation-name: changeText;
   animation-duration: 16s;
   animation-iteration-count: infinite;
 }
 
-@keyframes head {
+@keyframes changeText {
   from {
     content: "Уникальное предложение";
   }
@@ -324,28 +317,6 @@ html {
   to {
     content: "Уникальное предложение";
   }
-}
-.header__vert-link:hover {
-  color: var(--link_hover);
-}
-
-.header__vert-link1 {
-  animation: hide 1s infinite;
-}
-
-@keyframes hide {
-  from {
-    display: block;
-  }
-  to {
-    display: none;
-  }
-}
-.header__vert-link2 {
-  visibility: hidden;
-}
-.header__vert-link3 {
-  visibility: hidden;
 }
 
 /* ABOUT US */
