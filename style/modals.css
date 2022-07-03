@@ -70,3 +70,11 @@
   font-size: var(--text);
   line-height: 40px;
 }
+
+@media (max-width: 750px) {
+  .modal_header span,
+  .modal_about span,
+  .modal_import span {
+    line-height: 25px;
+  }
+}
