@@ -46,7 +46,7 @@
     new Image().src = './img/header_img1.jpg';
     new Image().src = './img/header_img2.jpg';
     new Image().src = './img/header_img3.jpg';
-    new Image().src = './img/loader.gif';
+    new Image().src = './img/logo_loading.png';
   </script>
   <style>
     #preloader {
@@ -69,15 +69,24 @@
 
     #preloader .icon_animate {
       position: absolute;
-      width: 150px;
-      height: 150px;
-      background: url(./img/loader.gif) center center no-repeat;
-      background-size: 150px;
+      width: 100px;
+      height: 70px;
+      background: url(./img/logo_loading.png) center center no-repeat;
+      background-size: 70px;
       margin-left: auto;
       margin-right: auto;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      animation: load 3s linear infinite;
+    }
+    @keyframes load {
+      from {
+        opacity: 1;
+      }
+      to {
+        opacity: 0;
+      }
     }
   </style>
   <title>MERJEN YOL</title>
@@ -87,7 +96,8 @@
   <!-- PRELOADER -->
   <div id="preloader">
     <div class="pre_wrapper" loading="eager">
-      <span class="icon_animate" loading="eager"> </span>
+      <span class="icon_animate" loading="eager">
+      </span>
     </div>
   </div>
   <!-- Modals -->
