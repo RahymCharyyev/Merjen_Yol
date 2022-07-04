@@ -48,6 +48,38 @@
     new Image().src = './img/header_img3.jpg';
     new Image().src = './img/loader.gif';
   </script>
+  <style>
+    #preloader {
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background: var(--white);
+      z-index: 30;
+    }
+
+    .pre_wrapper small {
+      display: block;
+      position: relative;
+      text-align: center;
+      font-size: var(--h3);
+      top: 250px;
+    }
+
+    #preloader .icon_animate {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      background: url(./img/loader.gif) center center no-repeat;
+      background-size: 150px;
+      margin-left: auto;
+      margin-right: auto;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
   <title>MERJEN YOL</title>
 </head>
 
