@@ -61,25 +61,27 @@ html {
 
 #preloader .icon_animate {
   position: absolute;
-  width: 100px;
-  height: 70px;
-  background: url(../img/logo_loading.png) center center no-repeat;
+  width: 150px;
+  height: 150px;
+  background: url(../img/loader.gif) center center no-repeat;
   background-size: 70px;
   margin-left: auto;
   margin-right: auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  animation: load 3s linear infinite;
+  /* animation: load 3s linear infinite; */
+  animation: infinite;
+
 }
-@keyframes load {
+/* @keyframes load {
   from {
     opacity: 1;
   }
   to {
     opacity: 0;
   }
-}
+} */
 
 /* HEADER */
 
@@ -833,13 +835,13 @@ html {
 }
 
 .thanks__title {
-  width: 540px;
+  width: 500px;
   font-weight: var(--semi-bold);
   font-size: var(--link);
   line-height: 35px;
   letter-spacing: -0.02em;
   color: var(--white);
-  text-align: justify;
+  /* text-align: justify; */
 }
 
 .thanks__slider {
@@ -968,7 +970,7 @@ html {
 
 .RC {
   font-weight: var(--medium);
-  font-size: 16px;
+  font-size: 14px;
   color: rgba(255, 255, 255, 0.8);
   padding-top: 20px;
   text-decoration: none;
