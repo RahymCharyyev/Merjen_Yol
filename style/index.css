@@ -760,25 +760,6 @@ html {
   margin-top: 125px;
 }
 
-#grayImg {
-  filter: grayscale(100%);
-  transition: 1s;
-}
-
-#grayImg:hover {
-  filter: grayscale(0%);
-  transition: 1s;
-}
-
-#grayImg1 {
-  filter: invert(0%);
-  transition: 1s;
-}
-
-#grayImg1:hover {
-  filter: invert(100%);
-  transition: 1s;
-}
 /* THANKS */
 
 .thanks {
