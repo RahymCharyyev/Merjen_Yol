@@ -1,8 +1,6 @@
-jQuery(document).ready(function($) {
-	$(window).on('load', function () {
-		var $preloader = $('.preloader'),
-		    $loader = $preloader.find('.preloader__loader');
-		$loader.fadeOut();
-		$preloader.delay(250).fadeOut(200);
-	});
+$(window).on("load", function () {
+  var $preloader = $("#preloader"),
+    $icon_animate = $preloader.find(".icon_animate");
+  $icon_animate.fadeOut();
+  $preloader.delay(300).fadeOut("slow");
 });
