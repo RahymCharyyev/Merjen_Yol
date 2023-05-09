@@ -21,3 +21,25 @@ $(window).scroll(function () {
     jQuery("#burger2").removeClass("fix");
   }
 });
+
+// Когда пользователь прокручивает страницу вниз на 20 пикселей, показывать кнопку
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 2000 ||
+    document.documentElement.scrollTop > 2000
+  ) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// Когда пользователь кликает на кнопку, прокрутить страницу вверх
+function scrollTopFunction() {
+  document.body.scrollTop = 0; // Для Safari
+  document.documentElement.scrollTop = 0; // Для Chrome, Firefox, IE и Opera
+}

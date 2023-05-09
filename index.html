@@ -102,11 +102,68 @@
         opacity: 1;
       }
     }
+
+    #myBtn {
+      display: none;
+      position: fixed;
+      width: 48px;
+      height: 48px;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      border: none;
+      outline: none;
+      font-weight: bold;
+      line-height: 44px;
+      text-transform: capitalize;
+      background-color: #e4b149;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 4px;
+    }
+
+    #myBtn:hover {
+      background-color: #eeb84b;
+    }
+
+    .arrow {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 18px;
+      height: 18px;
+      margin-left: -9px;
+      margin-top: -5px;
+      cursor: pointer;
+    }
+
+    .up:hover polyline,
+    .up:focus polyline {
+      stroke-width: 15;
+    }
+
+    .up:active polyline {
+      stroke-width: 15;
+      transition: all 100ms ease-in-out;
+    }
   </style>
   <title>MERJEN YOL</title>
 </head>
 
 <body>
+  <!-- Up  -->
+  <!-- <button onclick="scrollTopFunction()" id="myBtn" title="Наверх"><svg class="arrow up"
+      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="5 0 50 80"
+      xml:space="preserve">
+      <polyline fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" points="
+    0.375, 35.375 28.375, 0.375 58.67, 35.375 " />
+    </svg></button> -->
+  <button onclick="scrollTopFunction()" id="myBtn" title="Наверх"><svg class="arrow up"
+      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="5 0 50 80"
+      xml:space="preserve">
+      <polyline fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" points="
+      0.375, 35.375 28.375, 0.375 58.67, 35.375 " /></button>
+
   <!-- PRELOADER -->
   <div id="preloader">
     <div class="pre_wrapper" loading="eager">
@@ -203,10 +260,8 @@
           </a>
           <a href="./index.html">
             <li>RU</li>
-            </aм>
-      </div>
-      </div>
-      </ul>
+          </a>
+        </ul>
       </div>
       <div class="header__nav-logo" id="header__nav-logo"></div>
       <a class="header__nav-link" id="header__nav-link1" href="#about">О нас</a>
@@ -251,16 +306,16 @@
     <div class="strengths__container">
       <h2 class="strengths__container-title1 wow fadeInRight" data-wow-delay="0.3s">Наши сильные стороны:</h2>
       <ul class="wow fadeInRight" data-wow-delay="0.3s">
-        <li id="link1" onclick="openbox('box1'); return false">Оптимизированное ценообразование</li>
-        <li id="link2" onclick="openbox('box2'); return false">Доставка мелких грузов и документации</li>
-        <li id="link3" onclick="openbox('box3'); return false">
+        <li id="link1" onmouseover="openbox('box1'); return false">Оптимизированное ценообразование</li>
+        <li id="link2" onmouseover="openbox('box2'); return false">Доставка мелких грузов и документации</li>
+        <li id="link3" onmouseover="openbox('box3'); return false">
           Консультации в выборе транспорта и подходящего маршрута
         </li>
-        <li id="link4" onclick="openbox('box4'); return false">
+        <li id="link4" onmouseover="openbox('box4'); return false">
           Полная и частичная загрузка
         </li>
-        <li id="link5" onclick="openbox('box5'); return false">На связи 24/7</li>
-        <li id="link6" onclick="openbox('box6'); return false">
+        <li id="link5" onmouseover="openbox('box5'); return false">На связи 24/7</li>
+        <li id="link6" onmouseover="openbox('box6'); return false">
           Проверенная и оборудованная техника для перевозки
         </li>
       </ul>
@@ -274,7 +329,7 @@
       <h2 id="box2" class="strengths__container-title2">
         Небольшое<br /> не значит неважное
       </h2>
-      <p id="box2" class=" strengths__container-text">
+      <p id="box2" class="strengths__container-text">
         Мы учитываем почтовые и таможенные тарифы в каждой стране мира и предоставляем консультации о наилучшем способе
         доставки - почтовым курьером или карго. Для карго у нас имеются все виды транспорта (авто, ж/д, авиа и морской
         транспорт)
@@ -498,7 +553,7 @@
       <p class="footer__1-last">©
         <script type="text/javascript">
           document.write(new Date().getFullYear());
-        </script> Merjen Yol. Все права защищены.
+        </script> MERJEN YOL. Все права защищены.
       </p>
       <a class="RC" href="https://github.com/RahymCharyyev">Developed by RC</a>
     </div>
@@ -536,7 +591,7 @@
     <p class="footer__mobile">©
       <script type="text/javascript">
         document.write(new Date().getFullYear());
-      </script> Merjen Yol. Все права защищены.
+      </script> MERJEN YOL. Все права защищены.
     </p>
     <a class="RC__mobile" href="https://github.com/RahymCharyyev">Developed by RC</a>
   </footer>

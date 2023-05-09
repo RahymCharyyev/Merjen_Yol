@@ -74,7 +74,7 @@
   .strengths__container-text {
     width: 475px;
     height: 120px;
-    padding: 100px 350px 0 0;
+    padding: 150px 350px 0 0;
     justify-self: center;
   }
   .job {
@@ -320,7 +320,7 @@
     grid-row: 2/2;
     width: 475px;
     height: 120px;
-    padding: 0 0 0 50px;
+    padding: 20px 0 0 50px;
     align-self: start;
     justify-self: start;
   }
